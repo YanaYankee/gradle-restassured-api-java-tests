@@ -1,0 +1,30 @@
+ext {
+    junit5Ver = '5.8.1'
+    lombokVer = '1.18.26'
+    swaggerVer = '2.2.8'
+    jacksonVer = '2.14.2'
+}
+dependencies {
+    swaggerCodegen 'org.openapitools:openapi-generator-cli:3.+'
+
+    implementation(
+            'io.rest-assured:rest-assured:5.3.0',
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonVer",
+            "io.swagger:swagger-annotations:1.6.9",
+            'org.springframework:spring-websocket:4.+'
+    )
+
+    testImplementation (
+            'com.github.javafaker:javafaker:1.0.2',
+            "org.junit.jupiter:junit-jupiter-api:$junit5Ver"
+    )
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+/* https://projectlombok.org/setup/gradle */
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.26'
+    testAnnotationProcessor "org.projectlombok:lombok:$lombokVer"
+}

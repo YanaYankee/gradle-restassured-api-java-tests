@@ -4,8 +4,8 @@ import io.restassured.response.Response;
 
 public class PetsController extends BaseController {
     public Response createNewPet(){
-            return null;
-        }
+        return null;
+    }
 
     public Response filterPetsByStatus(String available) {
         return null;

@@ -1,7 +1,6 @@
 package com.swagger.api.controller;
 
-import com.swagger.api.model.PetDto;
-import io.restassured.http.ContentType;
+import com.swagger.petstore.models.Pet;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -9,8 +8,8 @@ import static io.restassured.RestAssured.given;
 
 public class PetController extends BaseController {
 
-    public Response addNewPetToStore(PetDto petDto) {
-            return petApi()
+    public Response addNewPetToStore(Pet petDto) {
+        return petApi()
 //                .body("{\n" +
 //                        "  \"id\":" + petId + ",\n" +
 //                        "  \"category\": {\n" +
@@ -31,12 +30,12 @@ public class PetController extends BaseController {
 //                        "}")
 //                .body(getClass().getResourceAsStream("src/test/resources/dataPet.json")
 //                        .toString().replaceAll("{id}"), faker.number().digit())
-                    .body(petDto)
-                    .post();
+                .body(petDto)
+                .post();
 
     }
     public Response getPetById(long targetPetId){
-       return petApi().get("/{targetPetId}", targetPetId);
+        return petApi().get("/{targetPetId}", targetPetId);
     }
     private RequestSpecification petApi(){
         return petStoreApiClient("/pet");
