@@ -24,7 +24,7 @@ swaggerSources{
 
             wipeOutputDir = true
             language = 'java'
-//            components = ["models", "apis"]
+       //     components = [[models], [apis]]
         }
     }
 }

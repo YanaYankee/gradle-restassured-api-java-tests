@@ -2,12 +2,12 @@
 
 All URIs are relative to *https://petstore.swagger.io/v2*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteOrder**](StoreApi.md#deleteOrder) | **DELETE** /store/order/{orderId} | Delete purchase order by ID
-[**getInventory**](StoreApi.md#getInventory) | **GET** /store/inventory | Returns pet inventories by status
-[**getOrderById**](StoreApi.md#getOrderById) | **GET** /store/order/{orderId} | Find purchase order by ID
-[**placeOrder**](StoreApi.md#placeOrder) | **POST** /store/order | Place an order for a pet
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**deleteOrder**](StoreApi.md#deleteOrder) | **DELETE** /store/order/{orderId} | Delete purchase order by ID |
+| [**getInventory**](StoreApi.md#getInventory) | **GET** /store/inventory | Returns pet inventories by status |
+| [**getOrderById**](StoreApi.md#getOrderById) | **GET** /store/order/{orderId} | Find purchase order by ID |
+| [**placeOrder**](StoreApi.md#placeOrder) | **POST** /store/order | Place an order for a pet |
 
 
 <a name="deleteOrder"></a>
@@ -21,25 +21,23 @@ For valid response try integer IDs with positive integer value. Negative or non-
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.StoreApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+StoreApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).store();
 
-StoreApi apiInstance = new StoreApi();
-Long orderId = 56L; // Long | ID of the order that needs to be deleted
-try {
-    apiInstance.deleteOrder(orderId);
-} catch (ApiException e) {
-    System.err.println("Exception when calling StoreApi#deleteOrder");
-    e.printStackTrace();
-}
+api.deleteOrder()
+    .orderIdPath(orderId).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **orderId** | **Long**| ID of the order that needs to be deleted |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **orderId** | **Long**| ID of the order that needs to be deleted | |
 
 ### Return type
 
@@ -66,27 +64,14 @@ Returns a map of status codes to quantities
 ```java
 // Import classes:
 //import com.swagger.petstore.ApiClient;
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.Configuration;
-//import com.swagger.petstore.auth.*;
-//import com.swagger.petstore.apis.StoreApi;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
-ApiClient defaultClient = Configuration.getDefaultApiClient();
+StoreApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).store();
 
-// Configure API key authorization: api_key
-ApiKeyAuth api_key = (ApiKeyAuth) defaultClient.getAuthentication("api_key");
-api_key.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//api_key.setApiKeyPrefix("Token");
-
-StoreApi apiInstance = new StoreApi();
-try {
-    Map<String, Integer> result = apiInstance.getInventory();
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling StoreApi#getInventory");
-    e.printStackTrace();
-}
+api.getInventory().execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
@@ -116,26 +101,23 @@ For valid response try integer IDs with value &gt;&#x3D; 1 and &lt;&#x3D; 10. Ot
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.StoreApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+StoreApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).store();
 
-StoreApi apiInstance = new StoreApi();
-Long orderId = 56L; // Long | ID of pet that needs to be fetched
-try {
-    Order result = apiInstance.getOrderById(orderId);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling StoreApi#getOrderById");
-    e.printStackTrace();
-}
+api.getOrderById()
+    .orderIdPath(orderId).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **orderId** | **Long**| ID of pet that needs to be fetched |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **orderId** | **Long**| ID of pet that needs to be fetched | |
 
 ### Return type
 
@@ -152,33 +134,30 @@ No authorization required
 
 <a name="placeOrder"></a>
 # **placeOrder**
-> Order placeOrder(order)
+> Order placeOrder(body)
 
 Place an order for a pet
 
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.StoreApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+StoreApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).store();
 
-StoreApi apiInstance = new StoreApi();
-Order order = new Order(); // Order | order placed for purchasing the pet
-try {
-    Order result = apiInstance.placeOrder(order);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling StoreApi#placeOrder");
-    e.printStackTrace();
-}
+api.placeOrder()
+    .body(body).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **order** | [**Order**](Order.md)| order placed for purchasing the pet |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **body** | [**Order**](Order.md)| order placed for purchasing the pet | |
 
 ### Return type
 

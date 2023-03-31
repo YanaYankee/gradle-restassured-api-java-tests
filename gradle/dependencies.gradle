@@ -1,29 +1,51 @@
 ext {
+//    allureArtifact = 'io.qameta.allure:allure'
+
     junit5Ver = '5.8.1'
     lombokVer = '1.18.26'
     swaggerVer = '2.2.8'
     jacksonVer = '2.14.2'
+    allureVer = '2.15.0'
 }
 dependencies {
-    swaggerCodegen 'org.openapitools:openapi-generator-cli:3.+'
+
+    swaggerCodegen 'org.openapitools:openapi-generator-cli:6.+'
 
     implementation(
             'io.rest-assured:rest-assured:5.3.0',
             "com.fasterxml.jackson.core:jackson-databind:$jacksonVer",
             "io.swagger:swagger-annotations:1.6.9",
-            'org.springframework:spring-websocket:4.+'
+            'org.springframework:spring-websocket:4.+',
+            'com.google.code.gson:gson:2.10.1',
+            'io.gsonfire:gson-fire:1.8.5',
+            'com.squareup.okio:okio:3.3.0',
+            'javax.annotation:javax.annotation-api:1.3.2',
+            'com.google.code.findbugs:jsr305:3.0.2',
+            'org.slf4j:slf4j-api:2.0.7',
+            'org.slf4j:slf4j-simple:2.0.7',
+            'com.github.javafaker:javafaker:1.0.2',
+            "org.junit.jupiter:junit-jupiter-api:$junit5Ver",
+            'com.epam.reportportal:logger-java-log4j:5.1.4',
+            'org.apache.logging.log4j:log4j-api:2.17.1',
+            'org.apache.logging.log4j:log4j-core:2.17.1',
+            'com.epam.reportportal:agent-java-junit5:5.1.6'
+
+//            "$allureArtifact-junit5:$allureVer",
+//            "$allureArtifact-java-commons:$allureVer",
+//            "$allureArtifact-selenide:$allureVer",
+//            "$allureArtifact-rest-assured:$allureVer"
     )
 
     testImplementation (
-            'com.github.javafaker:javafaker:1.0.2',
             "org.junit.jupiter:junit-jupiter-api:$junit5Ver"
+            , 'org.assertj:assertj-core:3.21.0'
+            , 'com.epam.reportportal:agent-java-junit5:5.1.6'
     )
 
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-/* https://projectlombok.org/setup/gradle */
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit5Ver"
+
     compileOnly 'org.projectlombok:lombok:1.18.26'
     annotationProcessor 'org.projectlombok:lombok:1.18.26'
-
 
     testCompileOnly 'org.projectlombok:lombok:1.18.26'
     testAnnotationProcessor "org.projectlombok:lombok:$lombokVer"

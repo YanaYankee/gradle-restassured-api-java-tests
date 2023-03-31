@@ -5,15 +5,7 @@
   "groupId" : "com.swagger",
   "artifactId" : "petstore",
   "artifactVersion" : "3.0.0",
-  "library" : "resttemplate",
+  "library" : "rest-assured",
   "dateLibrary" : "java8",
-  "hideGenerationTimestamp" : true,
-    "typeMappings" : {
-          "multiPartFile" :  "MultipartFile",
-          "OffsetDateTime" : "LocalDateTime"
-      },
-    "importMappings" : {
-      "MultipartFile" : "org.springframework.web.multipart.MultipartFile",
-      "java.time.OffsetDateTime" : "java.time.LocalDateTime"
-    }
+  "hideGenerationTimestamp" : true
 }

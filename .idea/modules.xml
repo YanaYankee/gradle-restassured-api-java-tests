@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/petstore-automation.iml" filepath="$PROJECT_DIR$/petstore-automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/petstore-automation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/petstore-automation.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/petstore-automation.test.iml" filepath="$PROJECT_DIR$/.idea/modules/petstore-automation.test.iml" />
     </modules>
   </component>
 </project>

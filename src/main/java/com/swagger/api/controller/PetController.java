@@ -10,26 +10,6 @@ public class PetController extends BaseController {
 
     public Response addNewPetToStore(Pet petDto) {
         return petApi()
-//                .body("{\n" +
-//                        "  \"id\":" + petId + ",\n" +
-//                        "  \"category\": {\n" +
-//                        "    \"id\": 0,\n" +
-//                        "    \"name\": \"string\"\n" +
-//                        "  },\n" +
-//                        "  \"name\": \"" + targetPetName + "\",\n" +
-//                        "  \"photoUrls\": [\n" +
-//                        "    \"string\"\n" +
-//                        "  ],\n" +
-//                        "  \"tags\": [\n" +
-//                        "    {\n" +
-//                        "      \"id\": 0,\n" +
-//                        "      \"name\": \"string\"\n" +
-//                        "    }\n" +
-//                        "  ],\n" +
-//                        "  \"status\": \"available\"\n" +
-//                        "}")
-//                .body(getClass().getResourceAsStream("src/test/resources/dataPet.json")
-//                        .toString().replaceAll("{id}"), faker.number().digit())
                 .body(petDto)
                 .post();
 

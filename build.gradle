@@ -1,16 +1,28 @@
 plugins {
     id 'java'
+    id 'io.freefair.lombok' version '8.0.1'
     id 'org.hidetake.swagger.generator' version '2.19.2'
+//      id 'com.github.opengl-BOBO.assertjGen2' version '2.0.0'
+//      id("io.github.carlobellettini.assertj-generator-p") version "2.0.1"
+//      id 'com.waftex.assertj-generator' version '1.1.4'
+//      id "com.github.fhermansson.assertj-generator" version "1.1.3"
 }
+
 
 group 'com.swagger'
 version '1.0-SNAPSHOT'
 
-apply from: "gradle/apiCodeGen.gradle"
 apply from: "gradle/dependencies.gradle"
+apply from: "gradle/apiCodeGen.gradle"
+
+//apply from: "gradle/assertjGen.gradle"
+
+
 
 repositories {
+    jcenter()
     mavenCentral()
+    mavenLocal()
 }
 
 sourceSets {
@@ -18,5 +30,7 @@ sourceSets {
 }
 
 test {
+    testLogging.showStandardStreams = true
     useJUnitPlatform()
+    systemProperty 'junit.jupiter.extensions.autodetection.enabled', true
 }

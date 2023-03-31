@@ -2,21 +2,21 @@
 
 All URIs are relative to *https://petstore.swagger.io/v2*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createUser**](UserApi.md#createUser) | **POST** /user | Create user
-[**createUsersWithArrayInput**](UserApi.md#createUsersWithArrayInput) | **POST** /user/createWithArray | Creates list of users with given input array
-[**createUsersWithListInput**](UserApi.md#createUsersWithListInput) | **POST** /user/createWithList | Creates list of users with given input array
-[**deleteUser**](UserApi.md#deleteUser) | **DELETE** /user/{username} | Delete user
-[**getUserByName**](UserApi.md#getUserByName) | **GET** /user/{username} | Get user by user name
-[**loginUser**](UserApi.md#loginUser) | **GET** /user/login | Logs user into the system
-[**logoutUser**](UserApi.md#logoutUser) | **GET** /user/logout | Logs out current logged in user session
-[**updateUser**](UserApi.md#updateUser) | **PUT** /user/{username} | Updated user
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**createUser**](UserApi.md#createUser) | **POST** /user | Create user |
+| [**createUsersWithArrayInput**](UserApi.md#createUsersWithArrayInput) | **POST** /user/createWithArray | Creates list of users with given input array |
+| [**createUsersWithListInput**](UserApi.md#createUsersWithListInput) | **POST** /user/createWithList | Creates list of users with given input array |
+| [**deleteUser**](UserApi.md#deleteUser) | **DELETE** /user/{username} | Delete user |
+| [**getUserByName**](UserApi.md#getUserByName) | **GET** /user/{username} | Get user by user name |
+| [**loginUser**](UserApi.md#loginUser) | **GET** /user/login | Logs user into the system |
+| [**logoutUser**](UserApi.md#logoutUser) | **GET** /user/logout | Logs out current logged in user session |
+| [**updateUser**](UserApi.md#updateUser) | **PUT** /user/{username} | Updated user |
 
 
 <a name="createUser"></a>
 # **createUser**
-> createUser(user)
+> createUser(body)
 
 Create user
 
@@ -25,25 +25,23 @@ This can only be done by the logged in user.
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.UserApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+UserApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).user();
 
-UserApi apiInstance = new UserApi();
-User user = new User(); // User | Created user object
-try {
-    apiInstance.createUser(user);
-} catch (ApiException e) {
-    System.err.println("Exception when calling UserApi#createUser");
-    e.printStackTrace();
-}
+api.createUser()
+    .body(body).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **user** | [**User**](User.md)| Created user object |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **body** | [**User**](User.md)| Created user object | |
 
 ### Return type
 
@@ -60,32 +58,30 @@ No authorization required
 
 <a name="createUsersWithArrayInput"></a>
 # **createUsersWithArrayInput**
-> createUsersWithArrayInput(user)
+> createUsersWithArrayInput(body)
 
 Creates list of users with given input array
 
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.UserApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+UserApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).user();
 
-UserApi apiInstance = new UserApi();
-List<User> user = Arrays.asList(null); // List<User> | List of user object
-try {
-    apiInstance.createUsersWithArrayInput(user);
-} catch (ApiException e) {
-    System.err.println("Exception when calling UserApi#createUsersWithArrayInput");
-    e.printStackTrace();
-}
+api.createUsersWithArrayInput()
+    .body(body).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **user** | [**List&lt;User&gt;**](List.md)| List of user object |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **body** | [**List&lt;User&gt;**](User.md)| List of user object | |
 
 ### Return type
 
@@ -102,32 +98,30 @@ No authorization required
 
 <a name="createUsersWithListInput"></a>
 # **createUsersWithListInput**
-> createUsersWithListInput(user)
+> createUsersWithListInput(body)
 
 Creates list of users with given input array
 
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.UserApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+UserApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).user();
 
-UserApi apiInstance = new UserApi();
-List<User> user = Arrays.asList(null); // List<User> | List of user object
-try {
-    apiInstance.createUsersWithListInput(user);
-} catch (ApiException e) {
-    System.err.println("Exception when calling UserApi#createUsersWithListInput");
-    e.printStackTrace();
-}
+api.createUsersWithListInput()
+    .body(body).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **user** | [**List&lt;User&gt;**](List.md)| List of user object |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **body** | [**List&lt;User&gt;**](User.md)| List of user object | |
 
 ### Return type
 
@@ -153,25 +147,23 @@ This can only be done by the logged in user.
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.UserApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+UserApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).user();
 
-UserApi apiInstance = new UserApi();
-String username = "username_example"; // String | The name that needs to be deleted
-try {
-    apiInstance.deleteUser(username);
-} catch (ApiException e) {
-    System.err.println("Exception when calling UserApi#deleteUser");
-    e.printStackTrace();
-}
+api.deleteUser()
+    .usernamePath(username).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **username** | **String**| The name that needs to be deleted |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **username** | **String**| The name that needs to be deleted | |
 
 ### Return type
 
@@ -195,26 +187,23 @@ Get user by user name
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.UserApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+UserApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).user();
 
-UserApi apiInstance = new UserApi();
-String username = "username_example"; // String | The name that needs to be fetched. Use user1 for testing. 
-try {
-    User result = apiInstance.getUserByName(username);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling UserApi#getUserByName");
-    e.printStackTrace();
-}
+api.getUserByName()
+    .usernamePath(username).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **username** | **String**| The name that needs to be fetched. Use user1 for testing.  |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **username** | **String**| The name that needs to be fetched. Use user1 for testing.  | |
 
 ### Return type
 
@@ -238,28 +227,25 @@ Logs user into the system
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.UserApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+UserApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).user();
 
-UserApi apiInstance = new UserApi();
-String username = "username_example"; // String | The user name for login
-String password = "password_example"; // String | The password for login in clear text
-try {
-    String result = apiInstance.loginUser(username, password);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling UserApi#loginUser");
-    e.printStackTrace();
-}
+api.loginUser()
+    .usernameQuery(username)
+    .passwordQuery(password).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **username** | **String**| The user name for login |
- **password** | **String**| The password for login in clear text |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **username** | **String**| The user name for login | |
+| **password** | **String**| The password for login in clear text | |
 
 ### Return type
 
@@ -283,17 +269,15 @@ Logs out current logged in user session
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.UserApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+UserApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).user();
 
-UserApi apiInstance = new UserApi();
-try {
-    apiInstance.logoutUser();
-} catch (ApiException e) {
-    System.err.println("Exception when calling UserApi#logoutUser");
-    e.printStackTrace();
-}
+api.logoutUser().execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
@@ -314,7 +298,7 @@ No authorization required
 
 <a name="updateUser"></a>
 # **updateUser**
-> updateUser(username, user)
+> updateUser(username, body)
 
 Updated user
 
@@ -323,27 +307,25 @@ This can only be done by the logged in user.
 ### Example
 ```java
 // Import classes:
-//import com.swagger.petstore.ApiException;
-//import com.swagger.petstore.apis.UserApi;
+//import com.swagger.petstore.ApiClient;
+//import io.restassured.builder.RequestSpecBuilder;
+//import io.restassured.filter.log.ErrorLoggingFilter;
 
+UserApi api = ApiClient.api(ApiClient.Config.apiConfig().withReqSpecSupplier(
+                () -> new RequestSpecBuilder()
+                        .setBaseUri("https://petstore.swagger.io/v2"))).user();
 
-UserApi apiInstance = new UserApi();
-String username = "username_example"; // String | name that need to be updated
-User user = new User(); // User | Updated user object
-try {
-    apiInstance.updateUser(username, user);
-} catch (ApiException e) {
-    System.err.println("Exception when calling UserApi#updateUser");
-    e.printStackTrace();
-}
+api.updateUser()
+    .usernamePath(username)
+    .body(body).execute(r -> r.prettyPeek());
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **username** | **String**| name that need to be updated |
- **user** | [**User**](User.md)| Updated user object |
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **username** | **String**| name that need to be updated | |
+| **body** | [**User**](User.md)| Updated user object | |
 
 ### Return type
 
