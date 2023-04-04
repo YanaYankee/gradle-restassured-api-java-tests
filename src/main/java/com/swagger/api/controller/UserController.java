@@ -20,14 +20,23 @@ public class UserController extends BaseController {
                     .post();
     }
 
-    @Step("Create user")
-    public Response createUsersFromListAuth(List<User> users) {
+    @Step("Create Users from list")
+    public Response createUsersWithArrayAuth(List<User> users) {
         return userApi()
                 .auth()
                 .preemptive()
                 .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
                 .body(users)
                 .post("/createWithArray");
+    }
+    @Step("Create user")
+    public Response createUsersWithListAuth(List<User> users) {
+        return userApi()
+                .auth()
+                .preemptive()
+                .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
+                .body(users)
+                .post("/createWithList");
     }
 
     @Step("Update user by userName")

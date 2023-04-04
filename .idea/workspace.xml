@@ -4,7 +4,159 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4175b831-8a63-4e6f-821c-af15a52b4d48" name="Changes" comment="" />
+    <list default="true" id="4175b831-8a63-4e6f-821c-af15a52b4d48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/CsPaXTNhQ3KnRc9bewU-rA/0/_state/retention-leases-16.st" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/CsPaXTNhQ3KnRc9bewU-rA/0/index/_4.cfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/CsPaXTNhQ3KnRc9bewU-rA/0/index/_4.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/CsPaXTNhQ3KnRc9bewU-rA/0/index/_4.si" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/_state/retention-leases-17.st" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_9.cfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_9.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_9.si" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_9_1.fnm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_9_1_Lucene80_0.dvd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_9_1_Lucene80_0.dvm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_a.cfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_a.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_a.si" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_a_1.fnm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_a_1_Lucene80_0.dvd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_a_1_Lucene80_0.dvm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_b.cfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_b.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/index/_b.si" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/_state/retention-leases-16.st" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/index/_6.cfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/index/_6.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/index/_6.si" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/index/_7.cfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/index/_7.cfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/index/_7.si" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UsersWithListCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/swagger/api/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/swagger/api/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/swagger/api/data/UserList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/swagger/api/data/UserListItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/swagger/UsersFromListCreationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.swagger.UsersFromListCreationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.swagger.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.swagger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.swagger.UsersFromListCreationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/UsersFromListCreationTests.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/CsPaXTNhQ3KnRc9bewU-rA/0/_state/retention-leases-15.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/CsPaXTNhQ3KnRc9bewU-rA/0/translog/translog-5.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/CsPaXTNhQ3KnRc9bewU-rA/0/translog/translog-5.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/CsPaXTNhQ3KnRc9bewU-rA/0/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/CsPaXTNhQ3KnRc9bewU-rA/0/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/_state/retention-leases-15.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/translog/translog-5.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/translog/translog-5.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/lzhhwaOcQruq9ClPik7H3A/0/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/_state/retention-leases-15.st" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/translog/translog-5.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/translog/translog-5.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/translog/translog.ckp" beforeDir="false" afterPath="$PROJECT_DIR$/data/elasticsearch/nodes/0/indices/zp5oWp9vSI-NTT-DeQyhzQ/0/translog/translog.ckp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/1259" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/16864" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/16864" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/16864_vm" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/16864_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/16904" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/16904" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17339" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17339" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17371" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17371" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17373" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17373" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17386" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17386" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17484" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17484" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17486" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17486" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17495" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17495" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17507" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17507" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17508" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17508" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17523" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17523" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17525" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17525" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17530" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17530" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17530_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17530_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17532" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17532" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17533" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17533" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17552" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17552" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17555" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17555" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17557" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17557" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17564" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17564" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17576" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17576" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17612" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17612" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17628" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17628" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17636" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17636" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17638" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17638" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17644" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17644" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17646" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17646" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17648" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17648" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17665" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17665" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17666" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17666" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17682" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17682" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17690" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17690" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17702" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17702" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17922" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17922" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17965" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17965" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17966" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17966" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17967" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17967" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17968" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17968" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17975" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17975" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17975_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17975_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17981" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17981" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17982" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17982" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17983" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17983" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17984" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17984" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17985" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17985" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17987" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17987" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17987_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17987_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17988" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17988" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17990" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17990" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17992" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17992" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17994" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17994" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18079" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18079" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18085" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18085" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18086" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18086" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18087" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18087" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18089" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18089" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18090" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18090" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18093" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18093" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18145" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18145" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18186" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18186" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18208" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18208" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18233" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18233" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18235" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18235" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18284" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18284" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/2619" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/2619" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/2696" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/2696" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/2840" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/2840" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/pg_multixact/members/0000" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/pg_multixact/members/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/pg_multixact/offsets/0000" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/pg_multixact/offsets/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/db_0.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/db_0.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/db_13478.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/db_13478.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/db_16384.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/db_16384.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/global.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/pg_wal/000000010000000000000002" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/pg_wal/000000010000000000000002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/postgres/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.bloomcycle.bin" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.bloomcycle.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/.bloomcycle.bin/fs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/.bloomcycle.bin/fs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/.usage-cache.bin/fs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/.usage-cache.bin/fs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/.usage.json/fs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/.usage.json/fs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/prj-keystore/.usage-cache.bin/fs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/prj-keystore/.usage-cache.bin/fs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/prj-users/.usage-cache.bin/fs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.minio.sys/buckets/prj-users/.usage-cache.bin/fs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.tracker.bin" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.tracker.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.usage-cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.usage-cache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.usage.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.usage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/prj-keystore/.usage-cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/prj-keystore/.usage-cache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/prj-users/.usage-cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/prj-users/.usage-cache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swagger/UsersFromListCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UsersWithArrayCreationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +284,7 @@
       <recent name="com.swagger.api.asserts" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UsersFromListCreationTests.creationOfANewUserViaApi">
+  <component name="RunManager" selected="Gradle.UsersWithArrayCreationTests">
     <configuration name="UserCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,52 +299,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.swagger.UserCreationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="UserCreationTests.creationOfANewUserViaApi" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.swagger.UserCreationTests.creationOfANewUserViaApi&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="UserDeleteTests.deleteExistingUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.swagger.UserDeleteTests.deleteExistingUser&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -248,13 +354,59 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="UsersWithArrayCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.swagger.UsersWithArrayCreationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersWithListCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.swagger.UsersWithListCreationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UsersWithArrayCreationTests" />
+        <item itemvalue="Gradle.UsersWithListCreationTests" />
         <item itemvalue="Gradle.UsersFromListCreationTests.creationOfANewUserViaApi" />
         <item itemvalue="Gradle.UserCreationTests" />
         <item itemvalue="Gradle.UsersFromListCreationTests" />
-        <item itemvalue="Gradle.UserDeleteTests.deleteExistingUser" />
-        <item itemvalue="Gradle.UserCreationTests.creationOfANewUserViaApi" />
       </list>
     </recent_temporary>
   </component>

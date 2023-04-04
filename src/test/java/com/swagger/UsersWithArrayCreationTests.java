@@ -18,7 +18,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
-public class UsersFromListCreationTests {
+public class UsersWithArrayCreationTests {
 
 
   static {requestSpecification = new RequestSpecBuilder()
@@ -32,8 +32,8 @@ public class UsersFromListCreationTests {
     UserDataGen userData = new UserDataGen();
     @ExtendWith(ReportPortalExtension.class)
     @Test
-    @DisplayName("Creation of a new User with required data present")
-    void creationOfANewUserViaApi() {
+    @DisplayName("Creation of Users with input array")
+    void creationOfUsersWithArray() {
         UserController userCont = new UserController();
 
         /* Create Users with API call */
@@ -52,7 +52,7 @@ public class UsersFromListCreationTests {
             }
 
         var createUserResponse = userCont
-                .createUsersFromListAuth(users);
+                .createUsersWithArrayAuth(users);
         asserts.okAssertion(createUserResponse);
 
 

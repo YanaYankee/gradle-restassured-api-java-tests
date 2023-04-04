@@ -1,0 +1,2113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.swagger.UsersWithArrayCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-04T14:15:18" hostname="ykononenko-mbp.local" time="7.073">
+  <properties/>
+  <testcase name="Creation of Users with input array" classname="com.swagger.UsersWithArrayCreationTests" time="7.073"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithArray
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 70276,
+        "username": "erin.cruickshank",
+        "firstName": "Jarrod",
+        "lastName": "Miller",
+        "email": "janiece.conroy@hotmail.com",
+        "password": "uki4wsdq6",
+        "phone": "673.507.6803",
+        "userStatus": 0
+    },
+    {
+        "id": 67,
+        "username": "melody.mcglynn",
+        "firstName": "Virginia",
+        "lastName": "Hegmann",
+        "email": "minna.lynch@yahoo.com",
+        "password": "zwbi7mtlt5d",
+        "phone": "(330) 585-0340 x23012",
+        "userStatus": 0
+    },
+    {
+        "id": 8060,
+        "username": "danielle.rutherford",
+        "firstName": "Lara",
+        "lastName": "Kub",
+        "email": "shana.schmidt@gmail.com",
+        "password": "aj0h14d17at",
+        "phone": "578.585.5486 x4051",
+        "userStatus": 0
+    },
+    {
+        "id": 5,
+        "username": "travis.jacobs",
+        "firstName": "Tora",
+        "lastName": "Greenholt",
+        "email": "genaro.kub@gmail.com",
+        "password": "qufz9fkj8dpv3mx",
+        "phone": "243-899-3697 x986",
+        "userStatus": 0
+    },
+    {
+        "id": 8276652,
+        "username": "darrin.paucek",
+        "firstName": "Donita",
+        "lastName": "Hackett",
+        "email": "bill.cormier@yahoo.com",
+        "password": "45g7131cf",
+        "phone": "323-484-4387 x5118",
+        "userStatus": 0
+    }
+]
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithArray
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 70276,
+        "username": "erin.cruickshank",
+        "firstName": "Jarrod",
+        "lastName": "Miller",
+        "email": "janiece.conroy@hotmail.com",
+        "password": "uki4wsdq6",
+        "phone": "673.507.6803",
+        "userStatus": 0
+    },
+    {
+        "id": 67,
+        "username": "melody.mcglynn",
+        "firstName": "Virginia",
+        "lastName": "Hegmann",
+        "email": "minna.lynch@yahoo.com",
+        "password": "zwbi7mtlt5d",
+        "phone": "(330) 585-0340 x23012",
+        "userStatus": 0
+    },
+    {
+        "id": 8060,
+        "username": "danielle.rutherford",
+        "firstName": "Lara",
+        "lastName": "Kub",
+        "email": "shana.schmidt@gmail.com",
+        "password": "aj0h14d17at",
+        "phone": "578.585.5486 x4051",
+        "userStatus": 0
+    },
+    {
+        "id": 5,
+        "username": "travis.jacobs",
+        "firstName": "Tora",
+        "lastName": "Greenholt",
+        "email": "genaro.kub@gmail.com",
+        "password": "qufz9fkj8dpv3mx",
+        "phone": "243-899-3697 x986",
+        "userStatus": 0
+    },
+    {
+        "id": 8276652,
+        "username": "darrin.paucek",
+        "firstName": "Donita",
+        "lastName": "Hackett",
+        "email": "bill.cormier@yahoo.com",
+        "password": "45g7131cf",
+        "phone": "323-484-4387 x5118",
+        "userStatus": 0
+    }
+]
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithArray
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 70276,
+        "username": "erin.cruickshank",
+        "firstName": "Jarrod",
+        "lastName": "Miller",
+        "email": "janiece.conroy@hotmail.com",
+        "password": "uki4wsdq6",
+        "phone": "673.507.6803",
+        "userStatus": 0
+    },
+    {
+        "id": 67,
+        "username": "melody.mcglynn",
+        "firstName": "Virginia",
+        "lastName": "Hegmann",
+        "email": "minna.lynch@yahoo.com",
+        "password": "zwbi7mtlt5d",
+        "phone": "(330) 585-0340 x23012",
+        "userStatus": 0
+    },
+    {
+        "id": 8060,
+        "username": "danielle.rutherford",
+        "firstName": "Lara",
+        "lastName": "Kub",
+        "email": "shana.schmidt@gmail.com",
+        "password": "aj0h14d17at",
+        "phone": "578.585.5486 x4051",
+        "userStatus": 0
+    },
+    {
+        "id": 5,
+        "username": "travis.jacobs",
+        "firstName": "Tora",
+        "lastName": "Greenholt",
+        "email": "genaro.kub@gmail.com",
+        "password": "qufz9fkj8dpv3mx",
+        "phone": "243-899-3697 x986",
+        "userStatus": 0
+    },
+    {
+        "id": 8276652,
+        "username": "darrin.paucek",
+        "firstName": "Donita",
+        "lastName": "Hackett",
+        "email": "bill.cormier@yahoo.com",
+        "password": "45g7131cf",
+        "phone": "323-484-4387 x5118",
+        "userStatus": 0
+    }
+]
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithArray
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 70276,
+        "username": "erin.cruickshank",
+        "firstName": "Jarrod",
+        "lastName": "Miller",
+        "email": "janiece.conroy@hotmail.com",
+        "password": "uki4wsdq6",
+        "phone": "673.507.6803",
+        "userStatus": 0
+    },
+    {
+        "id": 67,
+        "username": "melody.mcglynn",
+        "firstName": "Virginia",
+        "lastName": "Hegmann",
+        "email": "minna.lynch@yahoo.com",
+        "password": "zwbi7mtlt5d",
+        "phone": "(330) 585-0340 x23012",
+        "userStatus": 0
+    },
+    {
+        "id": 8060,
+        "username": "danielle.rutherford",
+        "firstName": "Lara",
+        "lastName": "Kub",
+        "email": "shana.schmidt@gmail.com",
+        "password": "aj0h14d17at",
+        "phone": "578.585.5486 x4051",
+        "userStatus": 0
+    },
+    {
+        "id": 5,
+        "username": "travis.jacobs",
+        "firstName": "Tora",
+        "lastName": "Greenholt",
+        "email": "genaro.kub@gmail.com",
+        "password": "qufz9fkj8dpv3mx",
+        "phone": "243-899-3697 x986",
+        "userStatus": 0
+    },
+    {
+        "id": 8276652,
+        "username": "darrin.paucek",
+        "firstName": "Donita",
+        "lastName": "Hackett",
+        "email": "bill.cormier@yahoo.com",
+        "password": "45g7131cf",
+        "phone": "323-484-4387 x5118",
+        "userStatus": 0
+    }
+]
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithArray
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 70276,
+        "username": "erin.cruickshank",
+        "firstName": "Jarrod",
+        "lastName": "Miller",
+        "email": "janiece.conroy@hotmail.com",
+        "password": "uki4wsdq6",
+        "phone": "673.507.6803",
+        "userStatus": 0
+    },
+    {
+        "id": 67,
+        "username": "melody.mcglynn",
+        "firstName": "Virginia",
+        "lastName": "Hegmann",
+        "email": "minna.lynch@yahoo.com",
+        "password": "zwbi7mtlt5d",
+        "phone": "(330) 585-0340 x23012",
+        "userStatus": 0
+    },
+    {
+        "id": 8060,
+        "username": "danielle.rutherford",
+        "firstName": "Lara",
+        "lastName": "Kub",
+        "email": "shana.schmidt@gmail.com",
+        "password": "aj0h14d17at",
+        "phone": "578.585.5486 x4051",
+        "userStatus": 0
+    },
+    {
+        "id": 5,
+        "username": "travis.jacobs",
+        "firstName": "Tora",
+        "lastName": "Greenholt",
+        "email": "genaro.kub@gmail.com",
+        "password": "qufz9fkj8dpv3mx",
+        "phone": "243-899-3697 x986",
+        "userStatus": 0
+    },
+    {
+        "id": 8276652,
+        "username": "darrin.paucek",
+        "firstName": "Donita",
+        "lastName": "Hackett",
+        "email": "bill.cormier@yahoo.com",
+        "password": "45g7131cf",
+        "phone": "323-484-4387 x5118",
+        "userStatus": 0
+    }
+]
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithArray
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 70276,
+        "username": "erin.cruickshank",
+        "firstName": "Jarrod",
+        "lastName": "Miller",
+        "email": "janiece.conroy@hotmail.com",
+        "password": "uki4wsdq6",
+        "phone": "673.507.6803",
+        "userStatus": 0
+    },
+    {
+        "id": 67,
+        "username": "melody.mcglynn",
+        "firstName": "Virginia",
+        "lastName": "Hegmann",
+        "email": "minna.lynch@yahoo.com",
+        "password": "zwbi7mtlt5d",
+        "phone": "(330) 585-0340 x23012",
+        "userStatus": 0
+    },
+    {
+        "id": 8060,
+        "username": "danielle.rutherford",
+        "firstName": "Lara",
+        "lastName": "Kub",
+        "email": "shana.schmidt@gmail.com",
+        "password": "aj0h14d17at",
+        "phone": "578.585.5486 x4051",
+        "userStatus": 0
+    },
+    {
+        "id": 5,
+        "username": "travis.jacobs",
+        "firstName": "Tora",
+        "lastName": "Greenholt",
+        "email": "genaro.kub@gmail.com",
+        "password": "qufz9fkj8dpv3mx",
+        "phone": "243-899-3697 x986",
+        "userStatus": 0
+    },
+    {
+        "id": 8276652,
+        "username": "darrin.paucek",
+        "firstName": "Donita",
+        "lastName": "Hackett",
+        "email": "bill.cormier@yahoo.com",
+        "password": "45g7131cf",
+        "phone": "323-484-4387 x5118",
+        "userStatus": 0
+    }
+]
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithArray
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 70276,
+        "username": "erin.cruickshank",
+        "firstName": "Jarrod",
+        "lastName": "Miller",
+        "email": "janiece.conroy@hotmail.com",
+        "password": "uki4wsdq6",
+        "phone": "673.507.6803",
+        "userStatus": 0
+    },
+    {
+        "id": 67,
+        "username": "melody.mcglynn",
+        "firstName": "Virginia",
+        "lastName": "Hegmann",
+        "email": "minna.lynch@yahoo.com",
+        "password": "zwbi7mtlt5d",
+        "phone": "(330) 585-0340 x23012",
+        "userStatus": 0
+    },
+    {
+        "id": 8060,
+        "username": "danielle.rutherford",
+        "firstName": "Lara",
+        "lastName": "Kub",
+        "email": "shana.schmidt@gmail.com",
+        "password": "aj0h14d17at",
+        "phone": "578.585.5486 x4051",
+        "userStatus": 0
+    },
+    {
+        "id": 5,
+        "username": "travis.jacobs",
+        "firstName": "Tora",
+        "lastName": "Greenholt",
+        "email": "genaro.kub@gmail.com",
+        "password": "qufz9fkj8dpv3mx",
+        "phone": "243-899-3697 x986",
+        "userStatus": 0
+    },
+    {
+        "id": 8276652,
+        "username": "darrin.paucek",
+        "firstName": "Donita",
+        "lastName": "Hackett",
+        "email": "bill.cormier@yahoo.com",
+        "password": "45g7131cf",
+        "phone": "323-484-4387 x5118",
+        "userStatus": 0
+    }
+]
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithArray
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 70276,
+        "username": "erin.cruickshank",
+        "firstName": "Jarrod",
+        "lastName": "Miller",
+        "email": "janiece.conroy@hotmail.com",
+        "password": "uki4wsdq6",
+        "phone": "673.507.6803",
+        "userStatus": 0
+    },
+    {
+        "id": 67,
+        "username": "melody.mcglynn",
+        "firstName": "Virginia",
+        "lastName": "Hegmann",
+        "email": "minna.lynch@yahoo.com",
+        "password": "zwbi7mtlt5d",
+        "phone": "(330) 585-0340 x23012",
+        "userStatus": 0
+    },
+    {
+        "id": 8060,
+        "username": "danielle.rutherford",
+        "firstName": "Lara",
+        "lastName": "Kub",
+        "email": "shana.schmidt@gmail.com",
+        "password": "aj0h14d17at",
+        "phone": "578.585.5486 x4051",
+        "userStatus": 0
+    },
+    {
+        "id": 5,
+        "username": "travis.jacobs",
+        "firstName": "Tora",
+        "lastName": "Greenholt",
+        "email": "genaro.kub@gmail.com",
+        "password": "qufz9fkj8dpv3mx",
+        "phone": "243-899-3697 x986",
+        "userStatus": 0
+    },
+    {
+        "id": 8276652,
+        "username": "darrin.paucek",
+        "firstName": "Donita",
+        "lastName": "Hackett",
+        "email": "bill.cormier@yahoo.com",
+        "password": "45g7131cf",
+        "phone": "323-484-4387 x5118",
+        "userStatus": 0
+    }
+]
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/erin.cruickshank
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/melody.mcglynn
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/danielle.rutherford
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/travis.jacobs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/darrin.paucek
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				X-Traicing-Id=04da7d8d-36ed-4fe4-a7f6-b4da4944094e
+				X-Traicing-Id=d28351cb-2ed2-4253-9211-8b33c5fd6d29
+				X-Traicing-Id=363aac65-86d5-4398-8629-e7b593d411d5
+				X-Traicing-Id=13e59fe0-9312-4f40-8c37-2f6bd650c4b1
+				X-Traicing-Id=e82b122b-3aed-40bc-826a-6f3b55898c3c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

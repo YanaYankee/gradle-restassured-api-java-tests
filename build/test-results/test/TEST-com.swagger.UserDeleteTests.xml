@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.swagger.UserDeleteTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-04T14:14:59" hostname="ykononenko-mbp.local" time="5.319">
+  <properties/>
+  <testcase name="Delete existing User with mistyped (first letter in upper case) userName" classname="com.swagger.UserDeleteTests" time="1.342"/>
+  <testcase name="Delete not existing User, 404 Not found check" classname="com.swagger.UserDeleteTests" time="0.658"/>
+  <testcase name="Delete User with empty username to check 405 Method not allowed" classname="com.swagger.UserDeleteTests" time="0.647"/>
+  <testcase name="Delete existing User" classname="com.swagger.UserDeleteTests" time="2.011"/>
+  <testcase name="Delete User with invalid username" classname="com.swagger.UserDeleteTests" time="0.654"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 8259406,
+    "username": "joesph.volkman",
+    "firstName": "Lane",
+    "lastName": "Sanford",
+    "email": "royal.wisozk@yahoo.com",
+    "password": "8q503d0zrmjhj",
+    "phone": "032.006.4714",
+    "userStatus": 0
+}
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 8259406,
+    "username": "joesph.volkman",
+    "firstName": "Lane",
+    "lastName": "Sanford",
+    "email": "royal.wisozk@yahoo.com",
+    "password": "8q503d0zrmjhj",
+    "phone": "032.006.4714",
+    "userStatus": 0
+}
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 8259406,
+    "username": "joesph.volkman",
+    "firstName": "Lane",
+    "lastName": "Sanford",
+    "email": "royal.wisozk@yahoo.com",
+    "password": "8q503d0zrmjhj",
+    "phone": "032.006.4714",
+    "userStatus": 0
+}
+logInUserWithMistypedUserName: Joesph.volkman
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/Joesph.volkman
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/Joesph.volkman
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/Joesph.volkman
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 404 Not Found
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/ornsierfisnuveifhiseufnaivufeuivgs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/ornsierfisnuveifhiseufnaivufeuivgs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/ornsierfisnuveifhiseufnaivufeuivgs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 404 Not Found
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 405 Method Not Allowed
+RESPONSE userDeleted: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 14,
+    "username": "corey.schmitt",
+    "firstName": "Ulysses",
+    "lastName": "Walker",
+    "email": "kiana.koch@gmail.com",
+    "password": "uv0a91dkdg1uil",
+    "phone": "1-381-506-9860 x5472",
+    "userStatus": 0
+}
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 14,
+    "username": "corey.schmitt",
+    "firstName": "Ulysses",
+    "lastName": "Walker",
+    "email": "kiana.koch@gmail.com",
+    "password": "uv0a91dkdg1uil",
+    "phone": "1-381-506-9860 x5472",
+    "userStatus": 0
+}
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 14,
+    "username": "corey.schmitt",
+    "firstName": "Ulysses",
+    "lastName": "Walker",
+    "email": "kiana.koch@gmail.com",
+    "password": "uv0a91dkdg1uil",
+    "phone": "1-381-506-9860 x5472",
+    "userStatus": 0
+}
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/corey.schmitt
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/corey.schmitt
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/corey.schmitt
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/corey.schmitt
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/corey.schmitt
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/corey.schmitt
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 404 Not Found
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/12123123
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/12123123
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/12123123
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=b0056154-6d5d-462d-aee9-48a173b24494
+				X-Traicing-Id=a54a655f-ce2f-43f7-b585-ae533912d19c
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 404 Not Found
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
