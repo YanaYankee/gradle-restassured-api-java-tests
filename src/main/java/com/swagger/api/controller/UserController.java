@@ -6,6 +6,8 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import com.epam.reportportal.annotations.Step;
 
+import java.util.List;
+
 public class UserController extends BaseController {
 
     @Step("Create user")
@@ -16,6 +18,16 @@ public class UserController extends BaseController {
                     .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
                     .body(userDto)
                     .post();
+    }
+
+    @Step("Create user")
+    public Response createUsersFromListAuth(List<User> users) {
+        return userApi()
+                .auth()
+                .preemptive()
+                .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
+                .body(users)
+                .post("/createWithArray");
     }
 
     @Step("Update user by userName")
