@@ -32,22 +32,22 @@ public class UserCreationTests {
     @Test
     @DisplayName("Creation of a new User with required data present")
     void creationOfANewUserViaApi() {
-        UserController userController = new UserController();
+        UserController userCont = new UserController();
 /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
-        var createUserResponse = userController
+        var createUserResponse = userCont
                 .createNewUser(targetUser);
         asserts.okAssertion(createUserResponse);
 
 /* Check if User created */
-        var userByNameResponse = userController.getUserByName(targetUser.getUsername());
+        var userByNameResponse = userCont.getUserByName(targetUser.getUsername());
         User actualUser = userByNameResponse.as(User.class);
 
         asserts.assertCreateUserBody(targetUser, actualUser);
         asserts.okAssertion(userByNameResponse);
 
 /* Delete User after test passed */
-        Response userDeleted = userController
+        Response userDeleted = userCont
                 .deleteUserByUsername(targetUser.getUsername());
         asserts.okAssertion(userDeleted);
 

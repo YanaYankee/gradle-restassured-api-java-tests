@@ -72,7 +72,7 @@ public class UserDeleteTests {
 /* Delete not existing user to check 404 response code*/
         Response userDeleted = userCont.deleteUserByUsername("12123123");
         asserts.notFoundAssertion(userDeleted);
-/* Check if deleted with search for User */
+/* Check ifth search for User */
 /* Step + assert should go here  */
     }
 }

@@ -15,6 +15,7 @@ public class ResponseAsserts {
     public void assertCreateUserBody(User expectUser, User actUser){
         Assertions.assertEquals(expectUser, actUser);
     }
+
     @Step("Assert 200 OK response line")
     public void okAssertion(Response response){
         this.assertions(ResponseCodes.OK, response);
@@ -30,6 +31,10 @@ public class ResponseAsserts {
     @Step("Assert 405 Method Not Allowed response line")
     public void notAllowedAssertion(Response response){
         this.assertions(ResponseCodes.NOT_ALLOWED, response);
+    }
+    @Step("Assert 406 Not Acceptable response line")
+    public void notAcceptableAssertion(Response response){
+        this.assertions(ResponseCodes.NOT_ACCEPTABLE, response);
     }
 
 }

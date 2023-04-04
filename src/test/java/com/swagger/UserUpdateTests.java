@@ -16,7 +16,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
-public class UserCreationTests {
+public class UserUpdateTests {
 
 
   static {requestSpecification = new RequestSpecBuilder()
@@ -33,22 +33,34 @@ public class UserCreationTests {
     @DisplayName("Creation of a new User with required data present")
     void creationOfANewUserViaApi() {
         UserController userCont = new UserController();
-/* Create new User with API call */
+/* Generate data for user create and user update */
         User targetUser = userData.generateDataToCreateUser();
+        User targetUserUpdated = userData.generateDataToCreateUser();
+/* Create new User with API call */
         var createUserResponse = userCont
                 .createNewUser(targetUser);
         asserts.okAssertion(createUserResponse);
 
 /* Check if User created */
         var userByNameResponse = userCont.getUserByName(targetUser.getUsername());
-        User actualUser = userByNameResponse.as(User.class);
-
-        asserts.assertCreateUserBody(targetUser, actualUser);
         asserts.okAssertion(userByNameResponse);
+
+/* Update User */
+        var updateUserResponse = userCont
+                .updateUser(targetUserUpdated, targetUser.getUsername());
+        asserts.okAssertion(updateUserResponse);
+/* Check if User created */
+        var searchUpdatedUserResponse = userCont
+                .getUserByName(targetUserUpdated.getUsername());
+
+        User actualUpdatedUser = searchUpdatedUserResponse.as(User.class);
+
+        asserts.assertCreateUserBody(targetUserUpdated, actualUpdatedUser);
+        asserts.okAssertion(searchUpdatedUserResponse);
 
 /* Delete User after test passed */
         Response userDeleted = userCont
-                .deleteUserByUsername(targetUser.getUsername());
+                .deleteUserByUsername(targetUserUpdated.getUsername());
         asserts.okAssertion(userDeleted);
 
     }

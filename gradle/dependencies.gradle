@@ -35,6 +35,12 @@ dependencies {
 //            "$allureArtifact-selenide:$allureVer",
 //            "$allureArtifact-rest-assured:$allureVer"
     )
+    test {
+        doFirst {
+            def weaver = configurations.testRuntimeClasspath.find { it.name.contains("aspectjweaver") }
+            jvmArgs += "-javaagent:$weaver"
+        }
+    }
 
     testImplementation (
             "org.junit.jupiter:junit-jupiter-api:$junit5Ver"
@@ -42,7 +48,8 @@ dependencies {
             , 'com.epam.reportportal:agent-java-junit5:5.1.6'
     )
 
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit5Ver"
+    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:$junit5Ver",
+            'org.aspectj:aspectjweaver:1.9.19')
 
     compileOnly 'org.projectlombok:lombok:1.18.26'
     annotationProcessor 'org.projectlombok:lombok:1.18.26'

@@ -1,7 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.swagger.UserLogInTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-31T13:14:16" hostname="ykononenko-mbp.local" time="1.972">
+<testsuite name="com.swagger.UserLogInTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-04T08:03:23" hostname="ykononenko-mbp.local" time="3.061">
   <properties/>
-  <testcase name="Log in User with valid credentials" classname="com.swagger.UserLogInTests" time="1.972"/>
+  <testcase name="Log in User with valid mistyped userName and valid Password" classname="com.swagger.UserLogInTests" time="3.061">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;406&gt; but was: &lt;200&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;406&gt; but was: &lt;200&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at app//com.swagger.api.asserts.ResponseAsserts.assertions(ResponseAsserts.java:11)
+	at app//com.swagger.api.asserts.ResponseAsserts.notAcceptableAssertion(ResponseAsserts.java:37)
+	at app//com.swagger.UserLogInTests.loginUserWithMistypedUserName(UserLogInTests.java:103)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base@15.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@15.0.2/java.lang.reflect.Method.invoke(Method.java:564)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//com.epam.reportportal.junit5.ReportPortalExtension.interceptTestMethod(ReportPortalExtension.java:259)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@15.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@15.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base@15.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@15.0.2/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/user
 Proxy:			<none>
@@ -9,22 +109,20 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
+Headers:		X-Traicing-Id=b7e559e6-cdd9-42ea-9eba-5f310a28b4e5
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 5407926,
-    "username": "mohammed.walter",
-    "firstName": "Jared",
-    "lastName": "Tillman",
-    "email": "diego.kozey@yahoo.com",
-    "password": "f9qs30pg11c",
-    "phone": "707-200-1943 x71683",
+    "id": 665,
+    "username": "brittany.heidenreich",
+    "firstName": "Herta",
+    "lastName": "Skiles",
+    "email": "kaylene.kirlin@hotmail.com",
+    "password": "8hazvnr6ag3",
+    "phone": "(415) 823-5201",
     "userStatus": 0
 }
 Request method:	POST
@@ -34,74 +132,23 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
+Headers:		X-Traicing-Id=b7e559e6-cdd9-42ea-9eba-5f310a28b4e5
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 5407926,
-    "username": "mohammed.walter",
-    "firstName": "Jared",
-    "lastName": "Tillman",
-    "email": "diego.kozey@yahoo.com",
-    "password": "f9qs30pg11c",
-    "phone": "707-200-1943 x71683",
+    "id": 665,
+    "username": "brittany.heidenreich",
+    "firstName": "Herta",
+    "lastName": "Skiles",
+    "email": "kaylene.kirlin@hotmail.com",
+    "password": "8hazvnr6ag3",
+    "phone": "(415) 823-5201",
     "userStatus": 0
 }
-Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/user
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 5407926,
-    "username": "mohammed.walter",
-    "firstName": "Jared",
-    "lastName": "Tillman",
-    "email": "diego.kozey@yahoo.com",
-    "password": "f9qs30pg11c",
-    "phone": "707-200-1943 x71683",
-    "userStatus": 0
-}
-Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/user
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 5407926,
-    "username": "mohammed.walter",
-    "firstName": "Jared",
-    "lastName": "Tillman",
-    "email": "diego.kozey@yahoo.com",
-    "password": "f9qs30pg11c",
-    "phone": "707-200-1943 x71683",
-    "userStatus": 0
-}
+makeFirstLetterUpperCase: Brittany.heidenreich
 Request method:	GET
 Request URI:	https://petstore.swagger.io/v2/user/login
 Proxy:			<none>
@@ -109,10 +156,8 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Authorization=Basic bW9oYW1tZWQud2FsdGVyOmY5cXMzMHBnMTFj
+Headers:		X-Traicing-Id=b7e559e6-cdd9-42ea-9eba-5f310a28b4e5
+				Authorization=Basic QnJpdHRhbnkuaGVpZGVucmVpY2g6OGhhenZucjZhZzM=
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -125,109 +170,213 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Authorization=Basic bW9oYW1tZWQud2FsdGVyOmY5cXMzMHBnMTFj
+Headers:		X-Traicing-Id=b7e559e6-cdd9-42ea-9eba-5f310a28b4e5
+				Authorization=Basic QnJpdHRhbnkuaGVpZGVucmVpY2g6OGhhenZucjZhZzM=
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/user/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Authorization=Basic bW9oYW1tZWQud2FsdGVyOmY5cXMzMHBnMTFj
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/user/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Authorization=Basic bW9oYW1tZWQud2FsdGVyOmY5cXMzMHBnMTFj
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-RESPONSE logInUserWithValidCreds: HTTP/1.1 200 OK
-Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/mohammed.walter
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/mohammed.walter
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/mohammed.walter
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/mohammed.walter
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
-				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
-				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+RESPONSE logInUserWithNotValidPass: HTTP/1.1 200 OK
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[[Test worker] INFO com.epam.reportportal.service.Launch - Rerun: false
+[rp-io-7] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-7] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-8] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+log4j:WARN No appenders could be found for logger (org.apache.http.impl.conn.BasicClientConnectionManager).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+[rp-io-12] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-11] ERROR com.epam.reportportal.utils.SubscriptionUtils - [43] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-15] ERROR com.epam.reportportal.utils.SubscriptionUtils - [47] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-16] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-19] ERROR com.epam.reportportal.utils.SubscriptionUtils - [51] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-20] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-22] ERROR com.epam.reportportal.service.logs.LoggingSubscriber - [54] ReportPortal logging error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-23] ERROR com.epam.reportportal.utils.SubscriptionUtils - [55] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-24] ERROR com.epam.reportportal.service.logs.LoggingSubscriber - [56] ReportPortal logging error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-25] ERROR com.epam.reportportal.utils.SubscriptionUtils - [57] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]></system-err>
 </testsuite>
