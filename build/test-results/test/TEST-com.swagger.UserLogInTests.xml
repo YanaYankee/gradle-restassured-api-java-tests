@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.swagger.UserLogInTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-31T11:57:52" hostname="ykononenko-mbp.local" time="1.962">
+<testsuite name="com.swagger.UserLogInTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-31T13:14:16" hostname="ykononenko-mbp.local" time="1.972">
   <properties/>
-  <testcase name="Log in User with valid credentials" classname="com.swagger.UserLogInTests" time="1.962"/>
+  <testcase name="Log in User with valid credentials" classname="com.swagger.UserLogInTests" time="1.972"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/user
 Proxy:			<none>
@@ -9,22 +9,22 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 62,
-    "username": "cherryl.kiehn",
-    "firstName": "Jenise",
-    "lastName": "Bradtke",
-    "email": "fredric.smitham@hotmail.com",
-    "password": "h9vgkc1t7a",
-    "phone": "824.008.2458",
+    "id": 5407926,
+    "username": "mohammed.walter",
+    "firstName": "Jared",
+    "lastName": "Tillman",
+    "email": "diego.kozey@yahoo.com",
+    "password": "f9qs30pg11c",
+    "phone": "707-200-1943 x71683",
     "userStatus": 0
 }
 Request method:	POST
@@ -34,22 +34,22 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 62,
-    "username": "cherryl.kiehn",
-    "firstName": "Jenise",
-    "lastName": "Bradtke",
-    "email": "fredric.smitham@hotmail.com",
-    "password": "h9vgkc1t7a",
-    "phone": "824.008.2458",
+    "id": 5407926,
+    "username": "mohammed.walter",
+    "firstName": "Jared",
+    "lastName": "Tillman",
+    "email": "diego.kozey@yahoo.com",
+    "password": "f9qs30pg11c",
+    "phone": "707-200-1943 x71683",
     "userStatus": 0
 }
 Request method:	POST
@@ -59,22 +59,22 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 62,
-    "username": "cherryl.kiehn",
-    "firstName": "Jenise",
-    "lastName": "Bradtke",
-    "email": "fredric.smitham@hotmail.com",
-    "password": "h9vgkc1t7a",
-    "phone": "824.008.2458",
+    "id": 5407926,
+    "username": "mohammed.walter",
+    "firstName": "Jared",
+    "lastName": "Tillman",
+    "email": "diego.kozey@yahoo.com",
+    "password": "f9qs30pg11c",
+    "phone": "707-200-1943 x71683",
     "userStatus": 0
 }
 Request method:	POST
@@ -84,22 +84,22 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 62,
-    "username": "cherryl.kiehn",
-    "firstName": "Jenise",
-    "lastName": "Bradtke",
-    "email": "fredric.smitham@hotmail.com",
-    "password": "h9vgkc1t7a",
-    "phone": "824.008.2458",
+    "id": 5407926,
+    "username": "mohammed.walter",
+    "firstName": "Jared",
+    "lastName": "Tillman",
+    "email": "diego.kozey@yahoo.com",
+    "password": "f9qs30pg11c",
+    "phone": "707-200-1943 x71683",
     "userStatus": 0
 }
 Request method:	GET
@@ -109,10 +109,10 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
-				Authorization=Basic Y2hlcnJ5bC5raWVobjpoOXZna2MxdDdh
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
+				Authorization=Basic bW9oYW1tZWQud2FsdGVyOmY5cXMzMHBnMTFj
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -125,10 +125,10 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
-				Authorization=Basic Y2hlcnJ5bC5raWVobjpoOXZna2MxdDdh
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
+				Authorization=Basic bW9oYW1tZWQud2FsdGVyOmY5cXMzMHBnMTFj
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -141,10 +141,10 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
-				Authorization=Basic Y2hlcnJ5bC5raWVobjpoOXZna2MxdDdh
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
+				Authorization=Basic bW9oYW1tZWQud2FsdGVyOmY5cXMzMHBnMTFj
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -157,10 +157,10 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
-				Authorization=Basic Y2hlcnJ5bC5raWVobjpoOXZna2MxdDdh
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
+				Authorization=Basic bW9oYW1tZWQud2FsdGVyOmY5cXMzMHBnMTFj
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -168,60 +168,60 @@ Multiparts:		<none>
 Body:			<none>
 RESPONSE logInUserWithValidCreds: HTTP/1.1 200 OK
 Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/cherryl.kiehn
+Request URI:	https://petstore.swagger.io/v2/user/mohammed.walter
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/cherryl.kiehn
+Request URI:	https://petstore.swagger.io/v2/user/mohammed.walter
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/cherryl.kiehn
+Request URI:	https://petstore.swagger.io/v2/user/mohammed.walter
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/cherryl.kiehn
+Request URI:	https://petstore.swagger.io/v2/user/mohammed.walter
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		X-Traicing-Id=8cb91cd5-2f62-4b0a-9a44-add9c93d71b5
-				X-Traicing-Id=203b8dde-1660-47cb-9bff-affc750f9d26
-				X-Traicing-Id=0e69b0b4-694e-4713-9808-bc332969cc70
+Headers:		X-Traicing-Id=c6ba0225-3f0e-468a-88dc-b8ef0f385831
+				X-Traicing-Id=2c83d971-227b-4d8f-8801-88efc6f9dfbb
+				X-Traicing-Id=8b6128eb-12be-46d4-b64c-8c0fee4210b2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>

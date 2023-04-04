@@ -39,6 +39,8 @@ public class UserDeleteTests {
         Response userDeleted = userCont
                 .deleteUserByUsername(targetUser.getUsername());
         asserts.okAssertion(userDeleted);
+        /* Check if deleted with search for User */
+        /* Step + assert should go here  */
     }
     @ExtendWith(ReportPortalExtension.class)
     @Test
@@ -48,6 +50,8 @@ public class UserDeleteTests {
         Response userDeleted = userCont
                 .deleteUserByUsername("ornsierfisnuveifhiseufnaivufeuivgs");
         asserts.notFoundAssertion(userDeleted);
+        /* Check if deleted with search for User */
+        /* Step + assert should go here  */
     }
     @ExtendWith(ReportPortalExtension.class)
     @Test
@@ -57,16 +61,10 @@ public class UserDeleteTests {
         Response userDeleted = userCont.deleteUserByUsername("");
         System.out.println("RESPONSE userDeleted: " + userDeleted.asString());
         asserts.notAllowedAssertion(userDeleted);
+        /* Check if deleted with search for User */
+        /* Step + assert should go here  */
     }
-    @ExtendWith(ReportPortalExtension.class)
-    @Test
-    @DisplayName("Delete User with invalid username")
-    void deleteUserWithInvalidUserName() {
-/* Delete not existing user to check 400 response code*/
-        Response userDeleted = userCont.deleteUserByUsername("_____");
-        // not able to guess what BE will regard as invalid username
-        asserts.invalidAssertion(userDeleted);
-    }
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Delete User with invalid username")
@@ -74,6 +72,8 @@ public class UserDeleteTests {
 /* Delete not existing user to check 404 response code*/
         Response userDeleted = userCont.deleteUserByUsername("12123123");
         asserts.notFoundAssertion(userDeleted);
+/* Check if deleted with search for User */
+/* Step + assert should go here  */
     }
 }
 
