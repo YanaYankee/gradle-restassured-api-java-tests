@@ -33,7 +33,7 @@ public class UserSearchTests {
  /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
         var createUserResponse = userCont
-                .createNewUser(targetUser);
+                .createNewUserAuth(targetUser);
         asserts.okAssertion(createUserResponse);
 /* Search existing User to check server response */
         Response userSearchResult = userCont

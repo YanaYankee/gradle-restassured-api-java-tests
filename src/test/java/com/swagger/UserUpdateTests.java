@@ -38,7 +38,7 @@ public class UserUpdateTests {
         User targetUserUpdated = userData.generateDataToCreateUser();
 /* Create new User with API call */
         var createUserResponse = userCont
-                .createNewUser(targetUser);
+                .createNewUserAuth(targetUser);
         asserts.okAssertion(createUserResponse);
 
 /* Check if User created */
@@ -47,7 +47,7 @@ public class UserUpdateTests {
 
 /* Update User */
         var updateUserResponse = userCont
-                .updateUser(targetUserUpdated, targetUser.getUsername());
+                .updateUserAuth(targetUserUpdated, targetUser.getUsername());
         asserts.okAssertion(updateUserResponse);
 /* Check if User created */
         var searchUpdatedUserResponse = userCont

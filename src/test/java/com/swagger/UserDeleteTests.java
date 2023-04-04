@@ -2,6 +2,7 @@ package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
 import com.swagger.api.asserts.ResponseAsserts;
+import com.swagger.api.controller.BaseController;
 import com.swagger.api.controller.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
@@ -16,7 +17,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
-public class UserDeleteTests {
+public class UserDeleteTests extends BaseController {
 
   static {requestSpecification = new RequestSpecBuilder()
           .log(LogDetail.ALL)
@@ -33,12 +34,29 @@ public class UserDeleteTests {
  /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
         var createUserResponse = userCont
-                .createNewUser(targetUser);
+                .createNewUserAuth(targetUser);
         asserts.okAssertion(createUserResponse);
 /* Delete existing User to check server response */
         Response userDeleted = userCont
                 .deleteUserByUsername(targetUser.getUsername());
         asserts.okAssertion(userDeleted);
+        /* Check if deleted with search for User */
+        /* Step + assert should go here  */
+    }
+    @ExtendWith(ReportPortalExtension.class)
+    @Test
+    @DisplayName("Delete existing User with mistyped (first letter in upper case) userName")
+    void deleteExistingUserWithMistypedUserName() {
+        /* Create new User with API call */
+        User targetUser = userData.generateDataToCreateUser();
+        var createUserResponse = userCont
+                .createNewUserAuth(targetUser);
+        asserts.okAssertion(createUserResponse);
+        /* Delete existing User with mistyped userName to check server response */
+        assert targetUser.getUsername() != null;
+        Response userDeleted = userCont
+                .deleteUserByUsername(makeFirstLetterUpperCase(targetUser.getUsername()));
+        asserts.notFoundAssertion(userDeleted);
         /* Check if deleted with search for User */
         /* Step + assert should go here  */
     }

@@ -1,20 +1,29 @@
 package com.swagger.api.controller;
 
+import com.swagger.api.data.AdminData;
 import com.swagger.petstore.models.User;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import com.epam.reportportal.annotations.Step;
 
 public class UserController extends BaseController {
+
     @Step("Create user")
-    public Response createNewUser(User userDto) {
+    public Response createNewUserAuth(User userDto) {
         return userApi()
-                .body(userDto)
-                .post();
+                    .auth()
+                    .preemptive()
+                    .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
+                    .body(userDto)
+                    .post();
     }
+
     @Step("Update user by userName")
-    public Response updateUser(User userDto, String targetUserName) {
+    public Response updateUserAuth(User userDto, String targetUserName) {
         return userApi()
+                .auth()
+                .preemptive()
+                .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
                 .body(userDto)
                 .put("/{username}", targetUserName);
     }

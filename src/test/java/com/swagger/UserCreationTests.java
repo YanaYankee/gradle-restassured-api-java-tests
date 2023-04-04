@@ -36,7 +36,7 @@ public class UserCreationTests {
 /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
         var createUserResponse = userCont
-                .createNewUser(targetUser);
+                .createNewUserAuth(targetUser);
         asserts.okAssertion(createUserResponse);
 
 /* Check if User created */

@@ -37,7 +37,7 @@ public class UserLogInTests extends BaseController {
         User targetUser = userData.generateDataToCreateUser();
 
         var createUserResponse = userController
-                .createNewUser(targetUser);
+                .createNewUserAuth(targetUser);
         asserts.okAssertion(createUserResponse);
 
         /* Log in this new User to system */
@@ -73,7 +73,7 @@ public class UserLogInTests extends BaseController {
         User targetUser = userData.generateDataToCreateUser();
 
         var createUserResponse = userController
-                .createNewUser(targetUser);
+                .createNewUserAuth(targetUser);
         asserts.okAssertion(createUserResponse);
 
         /* Log in this new User to system with not valid Pass*/
@@ -93,7 +93,7 @@ public class UserLogInTests extends BaseController {
         User targetUser = userData.generateDataToCreateUser();
 
         var createUserResponse = userController
-                .createNewUser(targetUser);
+                .createNewUserAuth(targetUser);
         asserts.okAssertion(createUserResponse);
 
         /* Log in this new User to system with username mistyped (first letter upper case and valid Pass*/

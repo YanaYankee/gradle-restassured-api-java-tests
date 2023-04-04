@@ -1,7 +1,6 @@
 package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
-import com.github.javafaker.Faker;
 import com.swagger.api.controller.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
@@ -34,7 +33,7 @@ public class UserLogOutTests {
                 .generateDataToCreateUser();
 
         var createUserResponse = userController
-                .createNewUser(targetUser);
+                .createNewUserAuth(targetUser);
         Assertions.assertEquals(200,createUserResponse.statusCode());
 
 /* Log in this new User to system */
