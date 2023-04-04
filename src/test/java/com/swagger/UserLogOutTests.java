@@ -28,7 +28,7 @@ public class UserLogOutTests {
     @Test
     @DisplayName("Log out User")
     void logoutUser() {
- /* Create new User with API call */
+        /* Create new User with API call */
         User targetUser = userData
                 .generateDataToCreateUser();
 
@@ -36,7 +36,7 @@ public class UserLogOutTests {
                 .createNewUserAuth(targetUser);
         Assertions.assertEquals(200,createUserResponse.statusCode());
 
-/* Log in this new User to system */
+        /* Log in this new User to system */
         var sessionIdMessage = userController
                 .getUserSessionId(targetUser.getUsername(), targetUser.getPassword());
         userController

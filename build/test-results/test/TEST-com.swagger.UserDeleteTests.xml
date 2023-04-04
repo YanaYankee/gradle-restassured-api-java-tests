@@ -1,205 +1,211 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - UserCreationTests</title>
-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
-<script src="../js/report.js" type="text/javascript"></script>
-</head>
-<body>
-<div id="content">
-<h1>UserCreationTests</h1>
-<div class="breadcrumbs">
-<a href="../index.html">all</a> &gt; 
-<a href="../packages/com.swagger.html">com.swagger</a> &gt; UserCreationTests</div>
-<div id="summary">
-<table>
-<tr>
-<td>
-<div class="summaryGroup">
-<table>
-<tr>
-<td>
-<div class="infoBox" id="tests">
-<div class="counter">1</div>
-<p>tests</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="failures">
-<div class="counter">0</div>
-<p>failures</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="ignored">
-<div class="counter">0</div>
-<p>ignored</p>
-</div>
-</td>
-<td>
-<div class="infoBox" id="duration">
-<div class="counter">4.064s</div>
-<p>duration</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</td>
-<td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
-<p>successful</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div id="tabs">
-<ul class="tabLinks">
-<li>
-<a href="#tab0">Tests</a>
-</li>
-<li>
-<a href="#tab1">Standard output</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
-</li>
-</ul>
-<div id="tab0" class="tab">
-<h2>Tests</h2>
-<table>
-<thead>
-<tr>
-<th>Test</th>
-<th>Method name</th>
-<th>Duration</th>
-<th>Result</th>
-</tr>
-</thead>
-<tr>
-<td class="success">Creation of a new User with required data present</td>
-<td class="success">creationOfANewUserViaApi()</td>
-<td class="success">4.064s</td>
-<td class="success">passed</td>
-</tr>
-</table>
-</div>
-<div id="tab1" class="tab">
-<h2>Standard output</h2>
-<span class="code">
-<pre>Request method:	POST
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.swagger.UserDeleteTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-04T10:39:16" hostname="ykononenko-mbp.local" time="3.526">
+  <properties/>
+  <testcase name="Delete existing User" classname="com.swagger.UserDeleteTests" time="3.526">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;200&gt; but was: &lt;404&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;200&gt; but was: &lt;404&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)
+	at app//com.swagger.api.asserts.ResponseAsserts.assertions(ResponseAsserts.java:11)
+	at app//com.swagger.api.asserts.ResponseAsserts.okAssertion(ResponseAsserts.java:21)
+	at app//com.swagger.UserDeleteTests.deleteExistingUser(UserDeleteTests.java:47)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base@15.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@15.0.2/java.lang.reflect.Method.invoke(Method.java:564)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//com.epam.reportportal.junit5.ReportPortalExtension.interceptTestMethod(ReportPortalExtension.java:259)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@15.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@15.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base@15.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@15.0.2/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/user
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		X-Traicing-Id=d4b6574f-7f62-446f-970c-6b109ca65eca
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=483cc916-bc20-4e61-b2db-e2c2878f1106
 				Authorization=Basic YWRtaW46YWRtaW4xMjM=
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
+Cookies:		<none>
+Multiparts:		<none>
 Body:
 {
-    &quot;id&quot;: 6,
-    &quot;username&quot;: &quot;barton.ernser&quot;,
-    &quot;firstName&quot;: &quot;Bert&quot;,
-    &quot;lastName&quot;: &quot;Rohan&quot;,
-    &quot;email&quot;: &quot;saul.pacocha@hotmail.com&quot;,
-    &quot;password&quot;: &quot;sfry9wvo&quot;,
-    &quot;phone&quot;: &quot;502.980.4776 x477&quot;,
-    &quot;userStatus&quot;: 0
+    "id": 263889166,
+    "username": "britni.mayert",
+    "firstName": "Otha",
+    "lastName": "Jast",
+    "email": "morton.nolan@hotmail.com",
+    "password": "s1u6i45is1zy",
+    "phone": "450-967-8404",
+    "userStatus": 0
 }
 Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/user
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		X-Traicing-Id=d4b6574f-7f62-446f-970c-6b109ca65eca
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=483cc916-bc20-4e61-b2db-e2c2878f1106
 				Authorization=Basic YWRtaW46YWRtaW4xMjM=
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
+Cookies:		<none>
+Multiparts:		<none>
 Body:
 {
-    &quot;id&quot;: 6,
-    &quot;username&quot;: &quot;barton.ernser&quot;,
-    &quot;firstName&quot;: &quot;Bert&quot;,
-    &quot;lastName&quot;: &quot;Rohan&quot;,
-    &quot;email&quot;: &quot;saul.pacocha@hotmail.com&quot;,
-    &quot;password&quot;: &quot;sfry9wvo&quot;,
-    &quot;phone&quot;: &quot;502.980.4776 x477&quot;,
-    &quot;userStatus&quot;: 0
+    "id": 263889166,
+    "username": "britni.mayert",
+    "firstName": "Otha",
+    "lastName": "Jast",
+    "email": "morton.nolan@hotmail.com",
+    "password": "s1u6i45is1zy",
+    "phone": "450-967-8404",
+    "userStatus": 0
 }
-Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/user/barton.ernser
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		X-Traicing-Id=d4b6574f-7f62-446f-970c-6b109ca65eca
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
-Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/user/barton.ernser
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		X-Traicing-Id=d4b6574f-7f62-446f-970c-6b109ca65eca
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
 Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/barton.ernser
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		X-Traicing-Id=d4b6574f-7f62-446f-970c-6b109ca65eca
+Request URI:	https://petstore.swagger.io/v2/user/britni.mayert
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=483cc916-bc20-4e61-b2db-e2c2878f1106
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/user/barton.ernser
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		X-Traicing-Id=d4b6574f-7f62-446f-970c-6b109ca65eca
+Request URI:	https://petstore.swagger.io/v2/user/britni.mayert
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=483cc916-bc20-4e61-b2db-e2c2878f1106
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
-</pre>
-</span>
-</div>
-<div id="tab2" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>[Test worker] INFO com.epam.reportportal.service.Launch - Rerun: false
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/britni.mayert
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=483cc916-bc20-4e61-b2db-e2c2878f1106
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/britni.mayert
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=483cc916-bc20-4e61-b2db-e2c2878f1106
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 404 Not Found
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.epam.reportportal.service.Launch - Rerun: false
 [rp-io-7] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
@@ -263,7 +269,7 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-[rp-io-11] ERROR com.epam.reportportal.utils.SubscriptionUtils - [43] ReportPortal Finish test item execution error
+[rp-io-11] ERROR com.epam.reportportal.utils.SubscriptionUtils - [42] ReportPortal Finish test item execution error
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
@@ -278,7 +284,7 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-[rp-io-15] ERROR com.epam.reportportal.utils.SubscriptionUtils - [47] ReportPortal Finish test item execution error
+[rp-io-15] ERROR com.epam.reportportal.utils.SubscriptionUtils - [46] ReportPortal Finish test item execution error
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
@@ -308,7 +314,7 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-[rp-io-19] ERROR com.epam.reportportal.utils.SubscriptionUtils - [51] ReportPortal Finish test item execution error
+[rp-io-19] ERROR com.epam.reportportal.utils.SubscriptionUtils - [50] ReportPortal Finish test item execution error
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
@@ -338,7 +344,7 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-[rp-io-23] ERROR com.epam.reportportal.utils.SubscriptionUtils - [55] ReportPortal Finish test item execution error
+[rp-io-23] ERROR com.epam.reportportal.utils.SubscriptionUtils - [54] ReportPortal Finish test item execution error
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
@@ -368,7 +374,7 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-[rp-io-27] ERROR com.epam.reportportal.utils.SubscriptionUtils - [59] ReportPortal Finish test item execution error
+[rp-io-27] ERROR com.epam.reportportal.utils.SubscriptionUtils - [58] ReportPortal Finish test item execution error
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
@@ -398,7 +404,7 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-[rp-io-31] ERROR com.epam.reportportal.utils.SubscriptionUtils - [63] ReportPortal Finish test item execution error
+[rp-io-30] ERROR com.epam.reportportal.service.logs.LoggingSubscriber - [61] ReportPortal logging error
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
@@ -413,7 +419,7 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-[rp-io-32] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+[rp-io-31] ERROR com.epam.reportportal.utils.SubscriptionUtils - [62] ReportPortal Finish test item execution error
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
@@ -428,7 +434,7 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-[rp-io-35] ERROR com.epam.reportportal.utils.SubscriptionUtils - [67] ReportPortal Finish test item execution error
+[rp-io-32] ERROR com.epam.reportportal.service.logs.LoggingSubscriber - [63] ReportPortal logging error
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
@@ -443,7 +449,7 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-[rp-io-37] ERROR com.epam.reportportal.utils.SubscriptionUtils - [69] ReportPortal Finish test item execution error
+[rp-io-33] ERROR com.epam.reportportal.utils.SubscriptionUtils - [64] ReportPortal Finish test item execution error
 retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
 	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
@@ -458,19 +464,5 @@ retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre>
-</span>
-</div>
-</div>
-<div id="footer">
-<p>
-<div>
-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
-</label>
-</div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.0.2</a> at 4 Apr 2023, 13:25:14</p>
-</div>
-</div>
-</body>
-</html>
+]]></system-err>
+</testsuite>
