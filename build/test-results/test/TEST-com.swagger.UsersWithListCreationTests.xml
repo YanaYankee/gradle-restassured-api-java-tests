@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.swagger.UsersWithListCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-05T09:57:44" hostname="ykononenko-mbp.local" time="12.222">
+  <properties/>
+  <testcase name="Creation of Users with input array" classname="com.swagger.UsersWithListCreationTests" time="12.222"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 80455908,
+        "username": "glynda.schiller",
+        "firstName": "Coralie",
+        "lastName": "Gulgowski",
+        "email": "winford.toy@hotmail.com",
+        "password": "95nnwp76yig",
+        "phone": "707-683-0432",
+        "userStatus": 0
+    },
+    {
+        "id": 574,
+        "username": "freda.toy",
+        "firstName": "Lamar",
+        "lastName": "Zulauf",
+        "email": "rob.turcotte@yahoo.com",
+        "password": "273ajzhz1pnbuu",
+        "phone": "099-482-1065 x280",
+        "userStatus": 0
+    },
+    {
+        "id": 4149266,
+        "username": "jerrell.farrell",
+        "firstName": "Cathi",
+        "lastName": "Predovic",
+        "email": "roderick.windler@yahoo.com",
+        "password": "8yz3kdqkk16cdw",
+        "phone": "1-081-552-3472",
+        "userStatus": 0
+    },
+    {
+        "id": 59320139,
+        "username": "patricia.smitham",
+        "firstName": "Derek",
+        "lastName": "Stoltenberg",
+        "email": "reina.murphy@gmail.com",
+        "password": "7d0i76iarpou",
+        "phone": "890.570.4403 x12247",
+        "userStatus": 0
+    },
+    {
+        "id": 959703750,
+        "username": "paul.considine",
+        "firstName": "Cristi",
+        "lastName": "Marks",
+        "email": "petra.kuphal@yahoo.com",
+        "password": "msgvjotqlb",
+        "phone": "1-903-027-2174",
+        "userStatus": 0
+    }
+]
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user/createWithList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Authorization=Basic YWRtaW46YWRtaW4xMjM=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "id": 80455908,
+        "username": "glynda.schiller",
+        "firstName": "Coralie",
+        "lastName": "Gulgowski",
+        "email": "winford.toy@hotmail.com",
+        "password": "95nnwp76yig",
+        "phone": "707-683-0432",
+        "userStatus": 0
+    },
+    {
+        "id": 574,
+        "username": "freda.toy",
+        "firstName": "Lamar",
+        "lastName": "Zulauf",
+        "email": "rob.turcotte@yahoo.com",
+        "password": "273ajzhz1pnbuu",
+        "phone": "099-482-1065 x280",
+        "userStatus": 0
+    },
+    {
+        "id": 4149266,
+        "username": "jerrell.farrell",
+        "firstName": "Cathi",
+        "lastName": "Predovic",
+        "email": "roderick.windler@yahoo.com",
+        "password": "8yz3kdqkk16cdw",
+        "phone": "1-081-552-3472",
+        "userStatus": 0
+    },
+    {
+        "id": 59320139,
+        "username": "patricia.smitham",
+        "firstName": "Derek",
+        "lastName": "Stoltenberg",
+        "email": "reina.murphy@gmail.com",
+        "password": "7d0i76iarpou",
+        "phone": "890.570.4403 x12247",
+        "userStatus": 0
+    },
+    {
+        "id": 959703750,
+        "username": "paul.considine",
+        "firstName": "Cristi",
+        "lastName": "Marks",
+        "email": "petra.kuphal@yahoo.com",
+        "password": "msgvjotqlb",
+        "phone": "1-903-027-2174",
+        "userStatus": 0
+    }
+]
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/glynda.schiller
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/glynda.schiller
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/glynda.schiller
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/glynda.schiller
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/freda.toy
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/freda.toy
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/freda.toy
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/freda.toy
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/jerrell.farrell
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/jerrell.farrell
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/jerrell.farrell
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/jerrell.farrell
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/patricia.smitham
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/patricia.smitham
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/patricia.smitham
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/patricia.smitham
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/paul.considine
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/paul.considine
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE searchUserByUsername: HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/paul.considine
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/paul.considine
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Traicing-Id=87163571-3dd4-45bd-b082-386ecd9b7cf3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+RESPONSE deleteUserByUsername: HTTP/1.1 200 OK
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.epam.reportportal.service.Launch - Rerun: false
+[rp-io-7] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-7] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-7] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+log4j:WARN No appenders could be found for logger (org.apache.http.impl.conn.BasicClientConnectionManager).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+[rp-io-12] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-11] ERROR com.epam.reportportal.utils.SubscriptionUtils - [42] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-15] ERROR com.epam.reportportal.utils.SubscriptionUtils - [46] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-16] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-19] ERROR com.epam.reportportal.utils.SubscriptionUtils - [50] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-20] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-23] ERROR com.epam.reportportal.utils.SubscriptionUtils - [54] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-24] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-27] ERROR com.epam.reportportal.utils.SubscriptionUtils - [58] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-28] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-31] ERROR com.epam.reportportal.utils.SubscriptionUtils - [62] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-32] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-35] ERROR com.epam.reportportal.utils.SubscriptionUtils - [66] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-36] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-39] ERROR com.epam.reportportal.utils.SubscriptionUtils - [70] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-40] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-43] ERROR com.epam.reportportal.utils.SubscriptionUtils - [74] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-44] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-47] ERROR com.epam.reportportal.utils.SubscriptionUtils - [78] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-48] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-51] ERROR com.epam.reportportal.utils.SubscriptionUtils - [82] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-52] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-55] ERROR com.epam.reportportal.utils.SubscriptionUtils - [86] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-56] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-59] ERROR com.epam.reportportal.utils.SubscriptionUtils - [90] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-60] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-63] ERROR com.epam.reportportal.utils.SubscriptionUtils - [94] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-64] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-67] ERROR com.epam.reportportal.utils.SubscriptionUtils - [98] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-68] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-71] ERROR com.epam.reportportal.utils.SubscriptionUtils - [102] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-72] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-75] ERROR com.epam.reportportal.utils.SubscriptionUtils - [106] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-76] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-79] ERROR com.epam.reportportal.utils.SubscriptionUtils - [110] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-80] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-83] ERROR com.epam.reportportal.utils.SubscriptionUtils - [114] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-84] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-87] ERROR com.epam.reportportal.utils.SubscriptionUtils - [118] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-88] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-91] ERROR com.epam.reportportal.utils.SubscriptionUtils - [122] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-92] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-95] ERROR com.epam.reportportal.utils.SubscriptionUtils - [126] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-96] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-99] ERROR com.epam.reportportal.utils.SubscriptionUtils - [130] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-0] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-3] ERROR com.epam.reportportal.utils.SubscriptionUtils - [27] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-3] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-8] ERROR com.epam.reportportal.utils.SubscriptionUtils - [33] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-8] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-10] ERROR com.epam.reportportal.utils.SubscriptionUtils - [41] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-12] ERROR com.epam.reportportal.utils.SubscriptionUtils - Start test item completed with error 
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-17] ERROR com.epam.reportportal.utils.SubscriptionUtils - [48] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+[rp-io-15] ERROR com.epam.reportportal.utils.SubscriptionUtils - [46] ReportPortal Finish test item execution error
+retrofit2.adapter.rxjava2.HttpException: HTTP 406 Not Acceptable
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:57)
+	at retrofit2.adapter.rxjava2.BodyObservable$BodyObserver.onNext(BodyObservable.java:38)
+	at retrofit2.adapter.rxjava2.CallExecuteObservable.subscribeActual(CallExecuteObservable.java:48)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at retrofit2.adapter.rxjava2.BodyObservable.subscribeActual(BodyObservable.java:35)
+	at io.reactivex.Observable.subscribe(Observable.java:12267)
+	at io.reactivex.internal.operators.observable.ObservableSubscribeOn$SubscribeTask.run(ObservableSubscribeOn.java:96)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:38)
+	at io.reactivex.internal.schedulers.ScheduledDirectTask.call(ScheduledDirectTask.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]></system-err>
+</testsuite>

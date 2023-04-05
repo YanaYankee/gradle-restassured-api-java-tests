@@ -37,27 +37,15 @@ public class UsersWithListCreationTests {
         UserController userCont = new UserController();
 
         /* Create Users with API call */
-        int objNumber = 5;
-        int i = 0;
-        int y = 0;
-        List<User> users = new ArrayList<>();
-        List<String> userNames = new ArrayList<>();
-
-        while(i<objNumber)
-            {
-                User user = userData.generateDataToCreateUser();
-                userNames.add(user.getUsername());
-                users.add(user);
-                i++;
-            }
+        List<User> users = userData.generateUsersArrayObj(5);
+        List<String> userNames = userData.generateUserNamesArrayObj(users);
 
         var createUserResponse = userCont
                 .createUsersWithListAuth(users);
         asserts.okAssertion(createUserResponse);
 
 
-
-        while(y<userNames.size())
+        for(int y = 0; y < userNames.size(); y++)
         {
             /* Check if User created */
             var userByNameResponse = userCont.searchUserByUsername(userNames.get(y));
@@ -69,12 +57,7 @@ public class UsersWithListCreationTests {
             Response userDeleted = userCont
                     .deleteUserByUsername(userNames.get(y));
             asserts.okAssertion(userDeleted);
-            y++;
         }
-
-
-
-
     }
 }
 
