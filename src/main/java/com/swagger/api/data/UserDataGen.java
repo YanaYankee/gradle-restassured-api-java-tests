@@ -3,6 +3,9 @@ package com.swagger.api.data;
 import com.github.javafaker.Faker;
 import com.swagger.petstore.models.User;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserDataGen {
     Faker faker = new Faker();
     public User generateDataToCreateUser() {
@@ -29,6 +32,30 @@ public class UserDataGen {
     return targetUser;
     }
 
+    public List<User> generateUsersArrayObj(int objNumber){
+        int i = 0;
+        List<User> users = new ArrayList<>();
+
+        while(i<objNumber)
+        {
+            User user = this.generateDataToCreateUser();
+            users.add(user);
+            i++;
+        }
+        return  users;
+    }
+    public List<String> generateUserNamesArrayObj(List<User> users){
+
+        int i = 0;
+        List<String> userNames = new ArrayList<>();
+
+        while(i < users.size())
+        {
+            userNames.add(users.get(i).getUsername());
+            i++;
+        }
+        return userNames;
+    }
 
 
 }
