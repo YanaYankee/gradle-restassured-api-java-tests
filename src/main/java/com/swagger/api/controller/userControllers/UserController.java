@@ -1,20 +1,15 @@
-package com.swagger.api.controller;
+package com.swagger.api.controller.userControllers;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.epam.reportportal.annotations.Step;
+import com.swagger.api.controller.BaseController;
 import com.swagger.api.data.AdminData;
-import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import com.epam.reportportal.annotations.Step;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class UserController extends BaseController {
-    UserDataGen userData = new UserDataGen();
 
     @Step("Create user")
     public Response createNewUserAuth(User userDto) {
@@ -123,10 +118,4 @@ public class UserController extends BaseController {
         return response;
 
     }
-
-
-
-
-
-
 }

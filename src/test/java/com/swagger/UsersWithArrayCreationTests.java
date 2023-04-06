@@ -1,8 +1,8 @@
 package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
-import com.swagger.api.asserts.ResponseAsserts;
-import com.swagger.api.controller.UserController;
+import com.swagger.api.asserts.Asserts;
+import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
 import io.restassured.builder.RequestSpecBuilder;
@@ -12,7 +12,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -28,8 +27,9 @@ public class UsersWithArrayCreationTests {
           .build();
   }
 
-    ResponseAsserts asserts = new ResponseAsserts();
+    Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Creation of Users with input array")
@@ -58,7 +58,63 @@ public class UsersWithArrayCreationTests {
                     .deleteUserByUsername(userNames.get(y));
             asserts.okAssertion(userDeleted);
         }
+    }
+        @ExtendWith(ReportPortalExtension.class)
+        @Test
+        @DisplayName("Creation of Users with input array consisting of 1 User object")
+        void creationOfUsersWithArrayOfOneUser() {
+            UserController userCont = new UserController();
 
+            /* Create Users with API call */
+            List<User> users = userData.generateUsersArrayObj(1);
+            List<String> userNames = userData.generateUserNamesArrayObj(users);
+
+            var createUserResponse = userCont
+                    .createUsersWithArrayAuth(users);
+            asserts.okAssertion(createUserResponse);
+
+
+            for (int y = 0; y < userNames.size(); y++) {
+                /* Check if User created */
+                var userByNameResponse = userCont.searchUserByUsername(userNames.get(y));
+                User actualUser = userByNameResponse.as(User.class);
+
+                asserts.assertCreateUserBody(users.get(y), actualUser);
+                asserts.okAssertion(userByNameResponse);
+                /* Delete User after test passed */
+                Response userDeleted = userCont
+                        .deleteUserByUsername(userNames.get(y));
+                asserts.okAssertion(userDeleted);
+            }
+        }
+    @ExtendWith(ReportPortalExtension.class)
+    @Test
+    @DisplayName("Creation of Users with input array consisting of 200 Users object")
+    void creationOfUsersWithArrayOfTwoHundredUsers() {
+        UserController userCont = new UserController();
+
+        /* Create Users with API call */
+        List<User> users = userData.generateUsersArrayObj(200);
+        List<String> userNames = userData.generateUserNamesArrayObj(users);
+
+        var createUserResponse = userCont
+                .createUsersWithArrayAuth(users);
+        asserts.okAssertion(createUserResponse);
+
+
+        for (int y = 0; y < userNames.size(); y++) {
+            /* Check if User created */
+            System.out.println("CHECK USER " + y );
+            var userByNameResponse = userCont.searchUserByUsername(userNames.get(y));
+            User actualUser = userByNameResponse.as(User.class);
+
+            asserts.assertCreateUserBody(users.get(y), actualUser);
+            asserts.okAssertion(userByNameResponse);
+            /* Delete User after test passed */
+            Response userDeleted = userCont
+                    .deleteUserByUsername(userNames.get(y));
+            asserts.okAssertion(userDeleted);
+        }
     }
 }
 

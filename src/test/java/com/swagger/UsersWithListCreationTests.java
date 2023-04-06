@@ -1,8 +1,8 @@
 package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
-import com.swagger.api.asserts.ResponseAsserts;
-import com.swagger.api.controller.UserController;
+import com.swagger.api.asserts.Asserts;
+import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
 import io.restassured.builder.RequestSpecBuilder;
@@ -12,7 +12,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -28,7 +27,7 @@ public class UsersWithListCreationTests {
           .build();
   }
 
-    ResponseAsserts asserts = new ResponseAsserts();
+    Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
     @ExtendWith(ReportPortalExtension.class)
     @Test

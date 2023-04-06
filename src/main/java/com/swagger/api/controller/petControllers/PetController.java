@@ -1,5 +1,6 @@
-package com.swagger.api.controller;
+package com.swagger.api.controller.petControllers;
 
+import com.swagger.api.controller.BaseController;
 import com.swagger.petstore.models.Pet;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;

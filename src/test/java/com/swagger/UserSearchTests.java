@@ -1,8 +1,8 @@
 package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
-import com.swagger.api.asserts.ResponseAsserts;
-import com.swagger.api.controller.UserController;
+import com.swagger.api.asserts.Asserts;
+import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
 import io.restassured.builder.RequestSpecBuilder;
@@ -25,7 +25,7 @@ public class UserSearchTests {
   }
     UserController userCont = new UserController();
     UserDataGen userData = new UserDataGen();
-    ResponseAsserts asserts = new ResponseAsserts();
+    Asserts asserts = new Asserts();
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Search for existing User")

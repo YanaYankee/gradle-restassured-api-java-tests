@@ -1,5 +1,6 @@
-package com.swagger.api.controller;
+package com.swagger.api.controller.petControllers;
 
+import com.swagger.api.controller.BaseController;
 import io.restassured.response.Response;
 
 public class PetsController extends BaseController {

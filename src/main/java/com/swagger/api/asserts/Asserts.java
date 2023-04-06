@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
 import com.swagger.api.data.ResponseCodes;
 
-public class ResponseAsserts {
+public class Asserts {
     private void assertions(ResponseCodes code, Response response){
         Assertions.assertEquals(code.getStatus(), response.statusCode());
         Assertions.assertEquals(code.getStatusLine(), response.statusLine());

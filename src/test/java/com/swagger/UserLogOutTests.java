@@ -1,7 +1,7 @@
 package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
-import com.swagger.api.controller.UserController;
+import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
 import io.restassured.builder.RequestSpecBuilder;
