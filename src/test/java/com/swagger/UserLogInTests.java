@@ -20,15 +20,18 @@ import static io.restassured.RestAssured.requestSpecification;
 
 public class UserLogInTests extends BaseController {
 
-  static {requestSpecification = new RequestSpecBuilder()
-          .log(LogDetail.ALL)
-          .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
-          .build();
-  }
+    static {
+        requestSpecification = new RequestSpecBuilder()
+                .log(LogDetail.ALL)
+                .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
+                .build();
+    }
+
     Faker faker = new Faker();
     UserController userController = new UserController();
     UserDataGen userData = new UserDataGen();
     Asserts asserts = new Asserts();
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Log in User with valid credentials")
@@ -85,6 +88,7 @@ public class UserLogInTests extends BaseController {
         Response userDeleted = userController.deleteUserByUsername(targetUser.getUsername());
         asserts.okAssertion(userDeleted);
     }
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Log in User with valid mistyped userName and valid Password")
@@ -98,7 +102,7 @@ public class UserLogInTests extends BaseController {
 
         /* Log in this new User to system with username mistyped (first letter upper case and valid Pass*/
         var loginResponse = userController
-                .logInUserWithNotValidPass(makeFirstLetterUpperCase(targetUser.getUsername()) ,
+                .logInUserWithNotValidPass(makeFirstLetterUpperCase(targetUser.getUsername()),
                         targetUser.getPassword());
         asserts.notAcceptableAssertion(loginResponse);
 

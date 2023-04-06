@@ -17,13 +17,16 @@ import static io.restassured.RestAssured.requestSpecification;
 
 public class UserLogOutTests {
 
-  static {requestSpecification = new RequestSpecBuilder()
-          .log(LogDetail.ALL)
-          .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
-          .build();
-  }
+    static {
+        requestSpecification = new RequestSpecBuilder()
+                .log(LogDetail.ALL)
+                .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
+                .build();
+    }
+
     UserController userController = new UserController();
     UserDataGen userData = new UserDataGen();
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Log out User")
@@ -34,7 +37,7 @@ public class UserLogOutTests {
 
         var createUserResponse = userController
                 .createNewUserAuth(targetUser);
-        Assertions.assertEquals(200,createUserResponse.statusCode());
+        Assertions.assertEquals(200, createUserResponse.statusCode());
 
         /* Log in this new User to system */
         var sessionIdMessage = userController

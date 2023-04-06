@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4175b831-8a63-4e6f-821c-af15a52b4d48" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/1259" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/16864" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/16864" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/16864_vm" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/16864_vm" afterDir="false" />
@@ -16,7 +17,6 @@
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17914" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17914" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17920" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17920" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17922" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17922" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17922_vm" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17922_vm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17927" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17927" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17934" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17934" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17935" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17935" afterDir="false" />
@@ -37,7 +37,6 @@
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17950" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17950" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/17951" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/17951" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18208" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18208" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/18208_vm" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/18208_vm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/base/16384/2619" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/base/16384/2619" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/global/pg_control" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/db_0.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/postgres/pg_stat_tmp/db_0.stat" afterDir="false" />
@@ -57,6 +56,26 @@
       <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.usage.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/.usage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/prj-keystore/.usage-cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/prj-keystore/.usage-cache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/prj-users/.usage-cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/data/storage/.minio.sys/buckets/prj-users/.usage-cache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/asserts/Asserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/asserts/Asserts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/petControllers/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/petControllers/PetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/petControllers/PetsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/petControllers/PetsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/storeControllers/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/storeControllers/StoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/userControllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/controller/userControllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/data/AdminData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/data/AdminData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/data/ResponseCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/data/ResponseCodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swagger/api/data/UserDataGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swagger/api/data/UserDataGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/reportportal.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/reportportal.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/swagger/pet-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/swagger/pet-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swagger/UserCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UserCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swagger/UserDeleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UserDeleteTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swagger/UserLogInTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UserLogInTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swagger/UserLogOutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UserLogOutTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swagger/UserSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UserSearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swagger/UserUpdateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UserUpdateTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swagger/UsersWithArrayCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UsersWithArrayCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swagger/UsersWithListCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swagger/UsersWithListCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

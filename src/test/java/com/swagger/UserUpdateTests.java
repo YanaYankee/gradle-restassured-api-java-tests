@@ -19,37 +19,39 @@ import static io.restassured.RestAssured.requestSpecification;
 public class UserUpdateTests {
 
 
-  static {requestSpecification = new RequestSpecBuilder()
-          .log(LogDetail.ALL)
-          //.addFilter(new AllureRestAssured())
-          .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
-          .build();
-  }
+    static {
+        requestSpecification = new RequestSpecBuilder()
+                .log(LogDetail.ALL)
+                //.addFilter(new AllureRestAssured())
+                .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
+                .build();
+    }
 
     Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Creation of a new User with required data present")
     void creationOfANewUserViaApi() {
         UserController userCont = new UserController();
-/* Generate data for user create and user update */
+        /* Generate data for user create and user update */
         User targetUser = userData.generateDataToCreateUser();
         User targetUserUpdated = userData.generateDataToCreateUser();
-/* Create new User with API call */
+        /* Create new User with API call */
         var createUserResponse = userCont
                 .createNewUserAuth(targetUser);
         asserts.okAssertion(createUserResponse);
 
-/* Check if User created */
+        /* Check if User created */
         var userByNameResponse = userCont.getUserByName(targetUser.getUsername());
         asserts.okAssertion(userByNameResponse);
 
-/* Update User */
+        /* Update User */
         var updateUserResponse = userCont
                 .updateUserAuth(targetUserUpdated, targetUser.getUsername());
         asserts.okAssertion(updateUserResponse);
-/* Check if User created */
+        /* Check if User created */
         var searchUpdatedUserResponse = userCont
                 .getUserByName(targetUserUpdated.getUsername());
 
@@ -58,7 +60,7 @@ public class UserUpdateTests {
         asserts.assertCreateUserBody(targetUserUpdated, actualUpdatedUser);
         asserts.okAssertion(searchUpdatedUserResponse);
 
-/* Delete User after test passed */
+        /* Delete User after test passed */
         Response userDeleted = userCont
                 .deleteUserByUsername(targetUserUpdated.getUsername());
         asserts.okAssertion(userDeleted);

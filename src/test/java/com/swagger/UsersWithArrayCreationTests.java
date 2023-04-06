@@ -20,12 +20,13 @@ import static io.restassured.RestAssured.requestSpecification;
 public class UsersWithArrayCreationTests {
 
 
-  static {requestSpecification = new RequestSpecBuilder()
-          .log(LogDetail.ALL)
-          //.addFilter(new AllureRestAssured())
-          .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
-          .build();
-  }
+    static {
+        requestSpecification = new RequestSpecBuilder()
+                .log(LogDetail.ALL)
+                //.addFilter(new AllureRestAssured())
+                .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
+                .build();
+    }
 
     Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
@@ -45,8 +46,7 @@ public class UsersWithArrayCreationTests {
         asserts.okAssertion(createUserResponse);
 
 
-        for(int y = 0; y < userNames.size(); y++)
-        {
+        for (int y = 0; y < userNames.size(); y++) {
             /* Check if User created */
             var userByNameResponse = userCont.searchUserByUsername(userNames.get(y));
             User actualUser = userByNameResponse.as(User.class);
@@ -59,34 +59,36 @@ public class UsersWithArrayCreationTests {
             asserts.okAssertion(userDeleted);
         }
     }
-        @ExtendWith(ReportPortalExtension.class)
-        @Test
-        @DisplayName("Creation of Users with input array consisting of 1 User object")
-        void creationOfUsersWithArrayOfOneUser() {
-            UserController userCont = new UserController();
 
-            /* Create Users with API call */
-            List<User> users = userData.generateUsersArrayObj(1);
-            List<String> userNames = userData.generateUserNamesArrayObj(users);
+    @ExtendWith(ReportPortalExtension.class)
+    @Test
+    @DisplayName("Creation of Users with input array consisting of 1 User object")
+    void creationOfUsersWithArrayOfOneUser() {
+        UserController userCont = new UserController();
 
-            var createUserResponse = userCont
-                    .createUsersWithArrayAuth(users);
-            asserts.okAssertion(createUserResponse);
+        /* Create Users with API call */
+        List<User> users = userData.generateUsersArrayObj(1);
+        List<String> userNames = userData.generateUserNamesArrayObj(users);
+
+        var createUserResponse = userCont
+                .createUsersWithArrayAuth(users);
+        asserts.okAssertion(createUserResponse);
 
 
-            for (int y = 0; y < userNames.size(); y++) {
-                /* Check if User created */
-                var userByNameResponse = userCont.searchUserByUsername(userNames.get(y));
-                User actualUser = userByNameResponse.as(User.class);
+        for (int y = 0; y < userNames.size(); y++) {
+            /* Check if User created */
+            var userByNameResponse = userCont.searchUserByUsername(userNames.get(y));
+            User actualUser = userByNameResponse.as(User.class);
 
-                asserts.assertCreateUserBody(users.get(y), actualUser);
-                asserts.okAssertion(userByNameResponse);
-                /* Delete User after test passed */
-                Response userDeleted = userCont
-                        .deleteUserByUsername(userNames.get(y));
-                asserts.okAssertion(userDeleted);
-            }
+            asserts.assertCreateUserBody(users.get(y), actualUser);
+            asserts.okAssertion(userByNameResponse);
+            /* Delete User after test passed */
+            Response userDeleted = userCont
+                    .deleteUserByUsername(userNames.get(y));
+            asserts.okAssertion(userDeleted);
         }
+    }
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Creation of Users with input array consisting of 200 Users object")
@@ -104,7 +106,7 @@ public class UsersWithArrayCreationTests {
 
         for (int y = 0; y < userNames.size(); y++) {
             /* Check if User created */
-            System.out.println("CHECK USER " + y );
+            System.out.println("CHECK USER " + y);
             var userByNameResponse = userCont.searchUserByUsername(userNames.get(y));
             User actualUser = userByNameResponse.as(User.class);
 

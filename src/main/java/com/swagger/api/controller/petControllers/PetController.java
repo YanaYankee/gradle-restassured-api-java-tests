@@ -5,8 +5,6 @@ import com.swagger.petstore.models.Pet;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-import static io.restassured.RestAssured.given;
-
 public class PetController extends BaseController {
 
     public Response addNewPetToStore(Pet petDto) {
@@ -15,10 +13,12 @@ public class PetController extends BaseController {
                 .post();
 
     }
-    public Response getPetById(long targetPetId){
+
+    public Response getPetById(long targetPetId) {
         return petApi().get("/{targetPetId}", targetPetId);
     }
-    private RequestSpecification petApi(){
+
+    private RequestSpecification petApi() {
         return petStoreApiClient("/pet");
     }
 

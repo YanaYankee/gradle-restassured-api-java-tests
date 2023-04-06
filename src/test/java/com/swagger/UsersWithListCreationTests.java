@@ -20,15 +20,17 @@ import static io.restassured.RestAssured.requestSpecification;
 public class UsersWithListCreationTests {
 
 
-  static {requestSpecification = new RequestSpecBuilder()
-          .log(LogDetail.ALL)
-          //.addFilter(new AllureRestAssured())
-          .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
-          .build();
-  }
+    static {
+        requestSpecification = new RequestSpecBuilder()
+                .log(LogDetail.ALL)
+                //.addFilter(new AllureRestAssured())
+                .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
+                .build();
+    }
 
     Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Creation of Users with input array")
@@ -44,8 +46,7 @@ public class UsersWithListCreationTests {
         asserts.okAssertion(createUserResponse);
 
 
-        for(int y = 0; y < userNames.size(); y++)
-        {
+        for (int y = 0; y < userNames.size(); y++) {
             /* Check if User created */
             var userByNameResponse = userCont.searchUserByUsername(userNames.get(y));
             User actualUser = userByNameResponse.as(User.class);

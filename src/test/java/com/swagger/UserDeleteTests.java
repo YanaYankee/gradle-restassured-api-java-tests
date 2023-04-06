@@ -19,11 +19,13 @@ import static io.restassured.RestAssured.requestSpecification;
 
 public class UserDeleteTests extends BaseController {
 
-  static {requestSpecification = new RequestSpecBuilder()
-          .log(LogDetail.ALL)
-          .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
-          .build();
-  }
+    static {
+        requestSpecification = new RequestSpecBuilder()
+                .log(LogDetail.ALL)
+                .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
+                .build();
+    }
+
     UserController userCont = new UserController();
     UserDataGen userData = new UserDataGen();
     Asserts asserts = new Asserts();
@@ -46,6 +48,7 @@ public class UserDeleteTests extends BaseController {
                 .searchUserByUsername(targetUser.getUsername());
         asserts.notFoundAssertion(deletedUserSearch);
     }
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Delete existing User with mistyped (first letter in upper case) userName")
@@ -61,6 +64,7 @@ public class UserDeleteTests extends BaseController {
                 .deleteUserByUsername(makeFirstLetterUpperCase(targetUser.getUsername()));
         asserts.notFoundAssertion(userDeleted);
     }
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Delete not existing User, 404 Not found check")
@@ -70,6 +74,7 @@ public class UserDeleteTests extends BaseController {
                 .deleteUserByUsername("ornsierfisnuveifhiseufnaivufeuivgs");
         asserts.notFoundAssertion(userDeleted);
     }
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Delete User with empty username to check 405 Method not allowed")

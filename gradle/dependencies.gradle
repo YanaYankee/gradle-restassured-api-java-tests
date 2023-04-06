@@ -1,6 +1,4 @@
 ext {
-//    allureArtifact = 'io.qameta.allure:allure'
-
     junit5Ver = '5.8.1'
     lombokVer = '1.18.26'
     swaggerVer = '2.2.8'
@@ -30,22 +28,13 @@ dependencies {
             'org.apache.logging.log4j:log4j-core:2.17.1',
             'com.epam.reportportal:agent-java-junit5:5.1.6'
 
-//            "$allureArtifact-junit5:$allureVer",
-//            "$allureArtifact-java-commons:$allureVer",
-//            "$allureArtifact-selenide:$allureVer",
-//            "$allureArtifact-rest-assured:$allureVer"
     )
-    test {
-        doFirst {
-            def weaver = configurations.testRuntimeClasspath.find { it.name.contains("aspectjweaver") }
-            jvmArgs += "-javaagent:$weaver"
-        }
-    }
+
 
     testImplementation (
-            "org.junit.jupiter:junit-jupiter-api:$junit5Ver"
-            , 'org.assertj:assertj-core:3.21.0'
-            , 'com.epam.reportportal:agent-java-junit5:5.1.6'
+            "org.junit.jupiter:junit-jupiter-api:$junit5Ver",
+            'org.assertj:assertj-core:3.21.0',
+            'com.epam.reportportal:agent-java-junit5:5.1.6'
     )
 
     testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:$junit5Ver",

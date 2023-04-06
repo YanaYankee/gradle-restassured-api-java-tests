@@ -9,5 +9,5 @@ public enum AdminData {
     ADMIN_USER_NAME("admin"),
     ADMIN_PASSWORD("admin123");
 
-    private  String  value;
+    private String value;
 }

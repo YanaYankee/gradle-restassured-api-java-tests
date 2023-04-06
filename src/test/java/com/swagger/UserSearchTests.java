@@ -18,24 +18,27 @@ import static io.restassured.RestAssured.requestSpecification;
 
 public class UserSearchTests {
 
-  static {requestSpecification = new RequestSpecBuilder()
-          .log(LogDetail.ALL)
-          .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
-          .build();
-  }
+    static {
+        requestSpecification = new RequestSpecBuilder()
+                .log(LogDetail.ALL)
+                .addHeader("X-Traicing-Id", UUID.randomUUID().toString())
+                .build();
+    }
+
     UserController userCont = new UserController();
     UserDataGen userData = new UserDataGen();
     Asserts asserts = new Asserts();
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Search for existing User")
     void searchForExistingUser() {
- /* Create new User with API call */
+        /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
         var createUserResponse = userCont
                 .createNewUserAuth(targetUser);
         asserts.okAssertion(createUserResponse);
-/* Search existing User to check server response */
+        /* Search existing User to check server response */
         Response userSearchResult = userCont
                 .searchUserByUsername(targetUser.getUsername());
         asserts.okAssertion(userSearchResult);
@@ -45,6 +48,7 @@ public class UserSearchTests {
 
         asserts.assertCreateUserBody(targetUser, actualUser);
     }
+
     @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Delete not existing User, 404 Not found check")
