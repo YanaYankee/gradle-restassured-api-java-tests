@@ -16,6 +16,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
+@ExtendWith(ReportPortalExtension.class)
 public class UserSearchTests {
 
     static {
@@ -29,7 +30,6 @@ public class UserSearchTests {
     UserDataGen userData = new UserDataGen();
     Asserts asserts = new Asserts();
 
-    @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Search for existing User")
     void searchForExistingUser() {
@@ -49,7 +49,7 @@ public class UserSearchTests {
         asserts.assertCreateUserBody(targetUser, actualUser);
     }
 
-    @ExtendWith(ReportPortalExtension.class)
+
     @Test
     @DisplayName("Delete not existing User, 404 Not found check")
     void searchForNotExistingUser() {

@@ -17,6 +17,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
+@ExtendWith(ReportPortalExtension.class)
 public class UserDeleteTests extends BaseController {
 
     static {
@@ -30,7 +31,7 @@ public class UserDeleteTests extends BaseController {
     UserDataGen userData = new UserDataGen();
     Asserts asserts = new Asserts();
 
-    @ExtendWith(ReportPortalExtension.class)
+
     @Test
     @DisplayName("Delete existing User")
     void deleteExistingUser() {
@@ -49,7 +50,7 @@ public class UserDeleteTests extends BaseController {
         asserts.notFoundAssertion(deletedUserSearch);
     }
 
-    @ExtendWith(ReportPortalExtension.class)
+
     @Test
     @DisplayName("Delete existing User with mistyped (first letter in upper case) userName")
     void deleteExistingUserWithMistypedUserName() {
@@ -65,7 +66,7 @@ public class UserDeleteTests extends BaseController {
         asserts.notFoundAssertion(userDeleted);
     }
 
-    @ExtendWith(ReportPortalExtension.class)
+
     @Test
     @DisplayName("Delete not existing User, 404 Not found check")
     void deleteNotExistingUser() {
@@ -75,7 +76,7 @@ public class UserDeleteTests extends BaseController {
         asserts.notFoundAssertion(userDeleted);
     }
 
-    @ExtendWith(ReportPortalExtension.class)
+
     @Test
     @DisplayName("Delete User with empty username to check 405 Method not allowed")
     void deleteUserWithEmptyUsername() {
@@ -85,7 +86,7 @@ public class UserDeleteTests extends BaseController {
         asserts.notAllowedAssertion(userDeleted);
     }
 
-    @ExtendWith(ReportPortalExtension.class)
+
     @Test
     @DisplayName("Delete User with invalid username")
     void deleteUserWithDigitalUserName() {

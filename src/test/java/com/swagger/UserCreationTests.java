@@ -16,6 +16,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
+@ExtendWith(ReportPortalExtension.class)
 public class UserCreationTests {
 
 
@@ -30,7 +31,8 @@ public class UserCreationTests {
     Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
 
-    @ExtendWith(ReportPortalExtension.class)
+
+
     @Test
     @DisplayName("Creation of a new User with required data present")
     void creationOfANewUserViaApi() {

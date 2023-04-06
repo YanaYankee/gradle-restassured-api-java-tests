@@ -18,6 +18,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
+@ExtendWith(ReportPortalExtension.class)
 public class UserLogInTests extends BaseController {
 
     static {
@@ -32,7 +33,7 @@ public class UserLogInTests extends BaseController {
     UserDataGen userData = new UserDataGen();
     Asserts asserts = new Asserts();
 
-    @ExtendWith(ReportPortalExtension.class)
+
     @Test
     @DisplayName("Log in User with valid credentials")
     void loginUserWithValidCreds() {
@@ -56,7 +57,7 @@ public class UserLogInTests extends BaseController {
     /* The following tests loginUserWithNotExistingCreds is only for
     the sake of test coverage coz indeed as there are no limitations as to the creds,
     any userName and Pass get 200 response  */
-    @ExtendWith(ReportPortalExtension.class)
+
     @Test
     @DisplayName("Log in User with valid credentials")
     void loginUserWithNotExistingCreds() {
@@ -68,7 +69,6 @@ public class UserLogInTests extends BaseController {
 
     }
 
-    @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Log in User with valid userName and not valid Password")
     void loginUserWithNotValidPassCreds() {
@@ -89,7 +89,6 @@ public class UserLogInTests extends BaseController {
         asserts.okAssertion(userDeleted);
     }
 
-    @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Log in User with valid mistyped userName and valid Password")
     void loginUserWithMistypedUserName() {

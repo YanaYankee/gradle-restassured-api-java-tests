@@ -15,6 +15,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
+@ExtendWith(ReportPortalExtension.class)
 public class UserLogOutTests {
 
     static {
@@ -27,7 +28,7 @@ public class UserLogOutTests {
     UserController userController = new UserController();
     UserDataGen userData = new UserDataGen();
 
-    @ExtendWith(ReportPortalExtension.class)
+
     @Test
     @DisplayName("Log out User")
     void logoutUser() {

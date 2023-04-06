@@ -17,6 +17,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
+@ExtendWith(ReportPortalExtension.class)
 public class UsersWithArrayCreationTests {
 
 
@@ -31,7 +32,6 @@ public class UsersWithArrayCreationTests {
     Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
 
-    @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Creation of Users with input array")
     void creationOfUsersWithArray() {
@@ -60,7 +60,6 @@ public class UsersWithArrayCreationTests {
         }
     }
 
-    @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Creation of Users with input array consisting of 1 User object")
     void creationOfUsersWithArrayOfOneUser() {
@@ -89,7 +88,6 @@ public class UsersWithArrayCreationTests {
         }
     }
 
-    @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Creation of Users with input array consisting of 200 Users object")
     void creationOfUsersWithArrayOfTwoHundredUsers() {

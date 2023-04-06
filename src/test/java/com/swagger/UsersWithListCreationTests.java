@@ -17,6 +17,7 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.requestSpecification;
 
+@ExtendWith(ReportPortalExtension.class)
 public class UsersWithListCreationTests {
 
 
@@ -31,7 +32,6 @@ public class UsersWithListCreationTests {
     Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
 
-    @ExtendWith(ReportPortalExtension.class)
     @Test
     @DisplayName("Creation of Users with input array")
     void creationOfUsersWithList() {
