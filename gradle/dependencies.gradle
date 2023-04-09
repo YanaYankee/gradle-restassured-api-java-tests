@@ -32,12 +32,12 @@ dependencies {
     )
 
 
-    testImplementation (
+    testImplementation(
             "org.junit.jupiter:junit-jupiter-api:$junit5Ver",
             'com.epam.reportportal:agent-java-junit5:5.1.6'
     )
 
-    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:$junit5Ver",
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junit5Ver",
             'org.aspectj:aspectjweaver:1.9.19')
 
     compileOnly 'org.projectlombok:lombok:1.18.26'

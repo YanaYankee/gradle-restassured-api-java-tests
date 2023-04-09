@@ -109,7 +109,8 @@ public class UsersWithArrayCreationTests {
             User actualUser = userByNameResponse.as(User.class);
 
             asserts.assertCreateUserBody(users.get(y), actualUser);
-            asserts.okAssertion(userByNameResponse);;
+            asserts.okAssertion(userByNameResponse);
+            ;
             /* Delete User after test passed */
             userCont
                     .deleteUserByUsername(userNames.get(y))

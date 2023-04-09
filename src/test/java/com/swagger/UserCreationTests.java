@@ -33,7 +33,6 @@ public class UserCreationTests {
     UserController userCont = new UserController();
 
 
-
     @Test
     @DisplayName("Creation of a new User with required data present")
     void creationOfANewUserViaApiDecorator() {

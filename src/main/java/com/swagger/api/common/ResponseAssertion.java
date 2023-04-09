@@ -5,19 +5,19 @@ import com.swagger.api.controller.UserServiceErrors;
 import com.swagger.api.data.ResponseCodes;
 import com.swagger.petstore.models.User;
 import io.restassured.response.Response;
-import org.assertj.core.api.Assertions;
 import org.assertj.core.api.ObjectAssert;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ResponseAssertion {
 
     private final Response targetResponse;
-    public ResponseAssertion(Response targetResponse){
+
+    public ResponseAssertion(Response targetResponse) {
         this.targetResponse = targetResponse;
     }
 
-    public ResponseAssertion statusCodeIsEqualTo(ResponseExpectMessages.StatusCode expectedStatusCode){
+    public ResponseAssertion statusCodeIsEqualTo(ResponseExpectMessages.StatusCode expectedStatusCode) {
         var statusCodeAssertionMessage = new ResponseExpectMessages(targetResponse)
                 .expectedStatusesCode(expectedStatusCode);
         assertThat(targetResponse.statusCode())
@@ -26,7 +26,7 @@ public class ResponseAssertion {
         return this;
     }
 
-    public ResponseAssertion errorMessageIsEqual(UserServiceErrors targetError){
+    public ResponseAssertion errorMessageIsEqual(UserServiceErrors targetError) {
         var espectedErrorResponse = ErrorResponse.builder()
                 .code(targetError.getCode())
                 .message(targetError.getMessage())
@@ -40,11 +40,11 @@ public class ResponseAssertion {
     }
 
 
-    public <T> T bindAs(Class<T> expectedClass){
+    public <T> T bindAs(Class<T> expectedClass) {
         T convertedObject;
-        try{
+        try {
             convertedObject = targetResponse.as(expectedClass);
-        } catch (Exception ex){
+        } catch (Exception ex) {
             var assertionMessage = new ResponseExpectMessages(targetResponse)
                     .expectedResponseBodyClass(expectedClass);
             throw new AssertionError(assertionMessage);
@@ -52,15 +52,15 @@ public class ResponseAssertion {
         return convertedObject;
     }
 
-    public ObjectAssert<Object> objectTOAssert(Class expectedClass){
+    public ObjectAssert<Object> objectTOAssert(Class expectedClass) {
         return assertThat(bindAs(expectedClass));
     }
 
-    public <T> T[] bindAsListOf(Class<T[]> expectedClass){
+    public <T> T[] bindAsListOf(Class<T[]> expectedClass) {
         return bindAs(expectedClass);
     }
 
-    public void setTargetResponse(Object expectedObject){
+    public void setTargetResponse(Object expectedObject) {
         var objectUnderTest = bindAs(expectedObject.getClass());
 
         assertThat(objectUnderTest).isEqualTo(expectedObject);

@@ -1,4 +1,4 @@
-task cleanAssertionClass (type: Delete) {
+task cleanAssertionClass(type: Delete) {
     delete "$buildDir/pet-api/src/main/java/io/swagger/petstore/asserts/Assetions.java"
 }
 assertjGen {

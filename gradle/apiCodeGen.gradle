@@ -1,11 +1,11 @@
 def mainResources = "src/main/resources"
 
-ext{
-        petApiDir = file("$buildDir/pet-api")
-        petSpecFile = file("$buildDir/petSpec.json")
+ext {
+    petApiDir = file("$buildDir/pet-api")
+    petSpecFile = file("$buildDir/petSpec.json")
 }
 
-swaggerSources{
+swaggerSources {
     logging.captureStandardOutput LogLevel.QUIET
 
     mkdir("build")
@@ -24,7 +24,7 @@ swaggerSources{
 
             wipeOutputDir = true
             language = 'java'
-       //     components = [[models], [apis]]
+            //     components = [[models], [apis]]
         }
     }
 }

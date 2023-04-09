@@ -46,7 +46,6 @@ public class UsersWithListCreationTests {
                 .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
 
-
         for (int y = 0; y < userNames.size(); y++) {
             /* Check if User created */
             var userByNameResponse = userCont.searchUserByUsername(userNames.get(y));

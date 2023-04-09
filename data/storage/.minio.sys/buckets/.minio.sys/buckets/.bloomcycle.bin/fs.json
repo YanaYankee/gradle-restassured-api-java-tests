@@ -1,1 +1,11 @@
-{"version":"1.0.2","checksum":{"algorithm":"","blocksize":0,"hashes":null},"meta":{"etag":"875756244d1ad8306d2accbd6750ed63-1"}}
+{
+  "version": "1.0.2",
+  "checksum": {
+    "algorithm": "",
+    "blocksize": 0,
+    "hashes": null
+  },
+  "meta": {
+    "etag": "875756244d1ad8306d2accbd6750ed63-1"
+  }
+}

@@ -1,1 +1,8 @@
-{"version":"1","format":"fs","id":"283a2567-eb07-4335-879e-09f7fc4469ff","fs":{"version":"2"}}
+{
+  "version": "1",
+  "format": "fs",
+  "id": "283a2567-eb07-4335-879e-09f7fc4469ff",
+  "fs": {
+    "version": "2"
+  }
+}

@@ -36,7 +36,7 @@ public class UserController extends BaseController {
 
     @Step("Create user")
     public ResponseAssertion createUsersWithListAuth(List<User> users) {
-        return  new ResponseAssertion(userApi()
+        return new ResponseAssertion(userApi()
                 .auth()
                 .preemptive()
                 .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
@@ -113,6 +113,7 @@ public class UserController extends BaseController {
         System.out.println("RESPONSE searchUserByUsername: " + response.getStatusLine());
         return response;
     }
+
     @Step("Search (get) User by userName")
     public ResponseAssertion searchUserByUsernameAssertion(String targetUserName) {
         return new ResponseAssertion(userApi()

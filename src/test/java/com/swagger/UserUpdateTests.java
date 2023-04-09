@@ -8,7 +8,6 @@ import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -32,6 +31,7 @@ public class UserUpdateTests {
     Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
     UserController userCont = new UserController();
+
     @Test
     @DisplayName("Creation of a new User with required data present")
     void creationOfANewUserViaApi() {

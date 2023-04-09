@@ -85,10 +85,16 @@ public class SBB {
         return this.append("/");
     }
 
-    public String build() { return this.strBuilder.toString(); }
+    public String build() {
+        return this.strBuilder.toString();
+    }
 
-    public String bld() { return build(); }
+    public String bld() {
+        return build();
+    }
 
     @Override
-    public String toString() {return bld();}
+    public String toString() {
+        return bld();
+    }
 }
