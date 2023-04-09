@@ -1,6 +1,7 @@
 package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
+import com.swagger.api.common.ResponseExpectMessages;
 import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
@@ -25,7 +26,7 @@ public class UserLogOutTests {
                 .build();
     }
 
-    UserController userController = new UserController();
+    UserController userCont = new UserController();
     UserDataGen userData = new UserDataGen();
 
 
@@ -36,14 +37,14 @@ public class UserLogOutTests {
         User targetUser = userData
                 .generateDataToCreateUser();
 
-        var createUserResponse = userController
-                .createNewUserAuth(targetUser);
-        Assertions.assertEquals(200, createUserResponse.statusCode());
+        userCont
+                .createNewUserAuth(targetUser)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
         /* Log in this new User to system */
-        var sessionIdMessage = userController
+        var sessionIdMessage = userCont
                 .getUserSessionId(targetUser.getUsername(), targetUser.getPassword());
-        userController
+        userCont
                 .logOutWithValidSessionId("dvczvcdxc");
     }
 }

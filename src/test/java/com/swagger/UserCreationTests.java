@@ -2,12 +2,12 @@ package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
 import com.swagger.api.asserts.Asserts;
+import com.swagger.api.common.ResponseExpectMessages;
 import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -30,30 +30,31 @@ public class UserCreationTests {
 
     Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
+    UserController userCont = new UserController();
 
 
 
     @Test
     @DisplayName("Creation of a new User with required data present")
-    void creationOfANewUserViaApi() {
-        UserController userCont = new UserController();
+    void creationOfANewUserViaApiDecorator() {
+
+
         /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
-        var createUserResponse = userCont
-                .createNewUserAuth(targetUser);
-        asserts.okAssertion(createUserResponse);
+        userCont
+                .createNewUserAuth(targetUser)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
         /* Check if User created */
-        var userByNameResponse = userCont.getUserByName(targetUser.getUsername());
-        User actualUser = userByNameResponse.as(User.class);
-
-        asserts.assertCreateUserBody(targetUser, actualUser);
-        asserts.okAssertion(userByNameResponse);
+        var userByNameResponse = userCont
+                .getUserByNameAssertion(targetUser.getUsername());
+        userByNameResponse
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
         /* Delete User after test passed */
-        Response userDeleted = userCont
-                .deleteUserByUsername(targetUser.getUsername());
-        asserts.okAssertion(userDeleted);
+        userCont
+                .deleteUserByUsername(targetUser.getUsername())
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
     }
 }

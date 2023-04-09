@@ -2,6 +2,7 @@ package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
 import com.swagger.api.asserts.Asserts;
+import com.swagger.api.common.ResponseExpectMessages;
 import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
@@ -30,27 +31,27 @@ public class UserUpdateTests {
 
     Asserts asserts = new Asserts();
     UserDataGen userData = new UserDataGen();
-
+    UserController userCont = new UserController();
     @Test
     @DisplayName("Creation of a new User with required data present")
     void creationOfANewUserViaApi() {
-        UserController userCont = new UserController();
+
         /* Generate data for user create and user update */
         User targetUser = userData.generateDataToCreateUser();
         User targetUserUpdated = userData.generateDataToCreateUser();
         /* Create new User with API call */
-        var createUserResponse = userCont
-                .createNewUserAuth(targetUser);
-        asserts.okAssertion(createUserResponse);
+        userCont
+                .createNewUserAuth(targetUser)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
         /* Check if User created */
         var userByNameResponse = userCont.getUserByName(targetUser.getUsername());
         asserts.okAssertion(userByNameResponse);
 
         /* Update User */
-        var updateUserResponse = userCont
-                .updateUserAuth(targetUserUpdated, targetUser.getUsername());
-        asserts.okAssertion(updateUserResponse);
+        userCont
+                .updateUserAuth(targetUserUpdated, targetUser.getUsername())
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
         /* Check if User created */
         var searchUpdatedUserResponse = userCont
                 .getUserByName(targetUserUpdated.getUsername());
@@ -61,9 +62,9 @@ public class UserUpdateTests {
         asserts.okAssertion(searchUpdatedUserResponse);
 
         /* Delete User after test passed */
-        Response userDeleted = userCont
-                .deleteUserByUsername(targetUserUpdated.getUsername());
-        asserts.okAssertion(userDeleted);
+        userCont
+                .deleteUserByUsername(targetUser.getUsername())
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
     }
 }

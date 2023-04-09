@@ -1,6 +1,7 @@
 package com.swagger.api.controller.userControllers;
 
 import com.epam.reportportal.annotations.Step;
+import com.swagger.api.common.ResponseAssertion;
 import com.swagger.api.controller.BaseController;
 import com.swagger.api.data.AdminData;
 import com.swagger.petstore.models.User;
@@ -12,48 +13,57 @@ import java.util.List;
 public class UserController extends BaseController {
 
     @Step("Create user")
-    public Response createNewUserAuth(User userDto) {
-        return userApi()
+    public ResponseAssertion createNewUserAuth(User userDto) {
+        return new ResponseAssertion(userApi()
                 .auth()
                 .preemptive()
                 .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
                 .body(userDto)
-                .post();
+                .post()
+        );
     }
 
     @Step("Create Users from list")
-    public Response createUsersWithArrayAuth(List<User> users) {
-        return userApi()
+    public ResponseAssertion createUsersWithArrayAuth(List<User> users) {
+        return new ResponseAssertion(userApi()
                 .auth()
                 .preemptive()
                 .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
                 .body(users)
-                .post("/createWithArray");
+                .post("/createWithArray")
+        );
     }
 
     @Step("Create user")
-    public Response createUsersWithListAuth(List<User> users) {
-        return userApi()
+    public ResponseAssertion createUsersWithListAuth(List<User> users) {
+        return  new ResponseAssertion(userApi()
                 .auth()
                 .preemptive()
                 .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
                 .body(users)
-                .post("/createWithList");
+                .post("/createWithList")
+        );
     }
 
     @Step("Update user by userName")
-    public Response updateUserAuth(User userDto, String targetUserName) {
-        return userApi()
+    public ResponseAssertion updateUserAuth(User userDto, String targetUserName) {
+        return new ResponseAssertion(userApi()
                 .auth()
                 .preemptive()
                 .basic(AdminData.ADMIN_USER_NAME.getValue(), AdminData.ADMIN_PASSWORD.getValue())
                 .body(userDto)
-                .put("/{username}", targetUserName);
+                .put("/{username}", targetUserName)
+        );
     }
 
     @Step("Get user by userName")
     public Response getUserByName(String targetUserName) {
         return userApi().get("/{username}", targetUserName);
+    }
+
+    @Step("Get user by userName")
+    public ResponseAssertion getUserByNameAssertion(String targetUserName) {
+        return new ResponseAssertion(userApi().get("/{username}", targetUserName));
     }
 
     private RequestSpecification userApi() {
@@ -91,11 +101,9 @@ public class UserController extends BaseController {
     }
 
     @Step("Delete User by userName")
-    public Response deleteUserByUsername(String targetUserName) {
-        Response response = userApi()
-                .delete("/{username}", targetUserName);
-        System.out.println("RESPONSE deleteUserByUsername: " + response.getStatusLine());
-        return response;
+    public ResponseAssertion deleteUserByUsername(String targetUserName) {
+        return new ResponseAssertion(userApi()
+                .delete("/{username}", targetUserName));
     }
 
     @Step("Search (get) User by userName")
@@ -104,6 +112,12 @@ public class UserController extends BaseController {
                 .get("/{username}", targetUserName);
         System.out.println("RESPONSE searchUserByUsername: " + response.getStatusLine());
         return response;
+    }
+    @Step("Search (get) User by userName")
+    public ResponseAssertion searchUserByUsernameAssertion(String targetUserName) {
+        return new ResponseAssertion(userApi()
+                .get("/{username}", targetUserName)
+        );
     }
 
     @Step("Get User Session id")

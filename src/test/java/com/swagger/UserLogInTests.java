@@ -3,13 +3,13 @@ package com.swagger;
 import com.epam.reportportal.junit5.ReportPortalExtension;
 import com.github.javafaker.Faker;
 import com.swagger.api.asserts.Asserts;
+import com.swagger.api.common.ResponseExpectMessages;
 import com.swagger.api.controller.BaseController;
 import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -29,7 +29,7 @@ public class UserLogInTests extends BaseController {
     }
 
     Faker faker = new Faker();
-    UserController userController = new UserController();
+    UserController userCont = new UserController();
     UserDataGen userData = new UserDataGen();
     Asserts asserts = new Asserts();
 
@@ -39,19 +39,19 @@ public class UserLogInTests extends BaseController {
     void loginUserWithValidCreds() {
         /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
-
-        var createUserResponse = userController
-                .createNewUserAuth(targetUser);
-        asserts.okAssertion(createUserResponse);
+        userCont
+                .createNewUserAuth(targetUser)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
         /* Log in this new User to system */
-        var loginResponse = userController
+        var loginResponse = userCont
                 .logInUserWithValidCreds(targetUser.getUsername(), targetUser.getPassword());
         asserts.okAssertion(loginResponse);
 
         /* Delete User after test passed */
-        Response userDeleted = userController.deleteUserByUsername(targetUser.getUsername());
-        asserts.okAssertion(userDeleted);
+        userCont
+                .deleteUserByUsername(targetUser.getUsername())
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
     }
 
     /* The following tests loginUserWithNotExistingCreds is only for
@@ -63,7 +63,7 @@ public class UserLogInTests extends BaseController {
     void loginUserWithNotExistingCreds() {
 
         /* Log in this new User to system */
-        var loginResponse = userController
+        var loginResponse = userCont
                 .logInUserWithValidCreds("sefresvesrfvesrfsverfserfvesrfv", "ssda");
         asserts.okAssertion(loginResponse);
 
@@ -74,19 +74,19 @@ public class UserLogInTests extends BaseController {
     void loginUserWithNotValidPassCreds() {
         /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
-
-        var createUserResponse = userController
-                .createNewUserAuth(targetUser);
-        asserts.okAssertion(createUserResponse);
+        userCont
+                .createNewUserAuth(targetUser)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
         /* Log in this new User to system with not valid Pass*/
-        var loginResponse = userController
+        var loginResponse = userCont
                 .logInUserWithNotValidPass(targetUser.getUsername(), "dofjvldjvljdlvsdvksdnds");
         asserts.notAcceptableAssertion(loginResponse);
 
         /* Delete User after test passed */
-        Response userDeleted = userController.deleteUserByUsername(targetUser.getUsername());
-        asserts.okAssertion(userDeleted);
+        userCont
+                .deleteUserByUsername(targetUser.getUsername())
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
     }
 
     @Test
@@ -95,19 +95,20 @@ public class UserLogInTests extends BaseController {
         /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
 
-        var createUserResponse = userController
-                .createNewUserAuth(targetUser);
-        asserts.okAssertion(createUserResponse);
+        userCont
+                .createNewUserAuth(targetUser)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
         /* Log in this new User to system with username mistyped (first letter upper case and valid Pass*/
-        var loginResponse = userController
+        var loginResponse = userCont
                 .logInUserWithNotValidPass(makeFirstLetterUpperCase(targetUser.getUsername()),
                         targetUser.getPassword());
         asserts.notAcceptableAssertion(loginResponse);
 
         /* Delete User after test passed */
-        Response userDeleted = userController.deleteUserByUsername(targetUser.getUsername());
-        asserts.okAssertion(userDeleted);
+        userCont
+                .deleteUserByUsername(targetUser.getUsername())
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
     }
 
 }

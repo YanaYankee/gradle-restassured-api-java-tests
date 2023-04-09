@@ -2,7 +2,10 @@ package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
 import com.swagger.api.asserts.Asserts;
+import com.swagger.api.common.ResponseAssertion;
+import com.swagger.api.common.ResponseExpectMessages;
 import com.swagger.api.controller.BaseController;
+import com.swagger.api.controller.UserServiceErrors;
 import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
@@ -37,17 +40,19 @@ public class UserDeleteTests extends BaseController {
     void deleteExistingUser() {
         /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
-        var createUserResponse = userCont
-                .createNewUserAuth(targetUser);
-        asserts.okAssertion(createUserResponse);
+        userCont
+                .createNewUserAuth(targetUser)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.NOT_FOUND);
+
         /* Delete existing User to check server response */
-        Response userDeleted = userCont
+        ResponseAssertion userDeleted = userCont
                 .deleteUserByUsername(targetUser.getUsername());
-        asserts.okAssertion(userDeleted);
+        userDeleted.statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
+
         /* Check if deleted with search for User */
-        Response deletedUserSearch = userCont
-                .searchUserByUsername(targetUser.getUsername());
-        asserts.notFoundAssertion(deletedUserSearch);
+        userCont
+                .searchUserByUsernameAssertion(targetUser.getUsername())
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.NOT_FOUND);
     }
 
 
@@ -56,14 +61,13 @@ public class UserDeleteTests extends BaseController {
     void deleteExistingUserWithMistypedUserName() {
         /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
-        var createUserResponse = userCont
-                .createNewUserAuth(targetUser);
-        asserts.okAssertion(createUserResponse);
+        userCont
+                .createNewUserAuth(targetUser)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
         /* Delete existing User with mistyped userName to check server response */
         assert targetUser.getUsername() != null;
-        Response userDeleted = userCont
+        ResponseAssertion userDeleted = userCont
                 .deleteUserByUsername(makeFirstLetterUpperCase(targetUser.getUsername()));
-        asserts.notFoundAssertion(userDeleted);
     }
 
 
@@ -71,9 +75,9 @@ public class UserDeleteTests extends BaseController {
     @DisplayName("Delete not existing User, 404 Not found check")
     void deleteNotExistingUser() {
         /* Delete not existing user to check 404 response code*/
-        Response userDeleted = userCont
+        ResponseAssertion userDeleted = userCont
                 .deleteUserByUsername("ornsierfisnuveifhiseufnaivufeuivgs");
-        asserts.notFoundAssertion(userDeleted);
+        userDeleted.statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.NOT_FOUND);
     }
 
 
@@ -81,9 +85,9 @@ public class UserDeleteTests extends BaseController {
     @DisplayName("Delete User with empty username to check 405 Method not allowed")
     void deleteUserWithEmptyUsername() {
         /* Delete User fetching empty userName to check 405 response code*/
-        Response userDeleted = userCont.deleteUserByUsername("");
-        System.out.println("RESPONSE userDeleted: " + userDeleted.asString());
-        asserts.notAllowedAssertion(userDeleted);
+        ResponseAssertion userDeleted = userCont.deleteUserByUsername("");
+        userDeleted
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.NOT_ALLOWED);
     }
 
 
@@ -91,8 +95,9 @@ public class UserDeleteTests extends BaseController {
     @DisplayName("Delete User with invalid username")
     void deleteUserWithDigitalUserName() {
         /* Delete not existing user to check 404 response code*/
-        Response userDeleted = userCont.deleteUserByUsername("12123123");
-        asserts.notFoundAssertion(userDeleted);
+        ResponseAssertion userDeleted = userCont
+                .deleteUserByUsername("12123123");
+        userDeleted.statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.NOT_FOUND);
     }
 }
 

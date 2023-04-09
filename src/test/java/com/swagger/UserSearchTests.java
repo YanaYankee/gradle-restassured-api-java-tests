@@ -2,6 +2,7 @@ package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
 import com.swagger.api.asserts.Asserts;
+import com.swagger.api.common.ResponseExpectMessages;
 import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
@@ -35,13 +36,13 @@ public class UserSearchTests {
     void searchForExistingUser() {
         /* Create new User with API call */
         User targetUser = userData.generateDataToCreateUser();
-        var createUserResponse = userCont
-                .createNewUserAuth(targetUser);
-        asserts.okAssertion(createUserResponse);
+        userCont
+                .createNewUserAuth(targetUser)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
         /* Search existing User to check server response */
-        Response userSearchResult = userCont
-                .searchUserByUsername(targetUser.getUsername());
-        asserts.okAssertion(userSearchResult);
+        userCont
+                .searchUserByUsernameAssertion(targetUser.getUsername())
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
 
         var userByNameResponse = userCont.getUserByName(targetUser.getUsername());
         User actualUser = userByNameResponse.as(User.class);
@@ -54,9 +55,9 @@ public class UserSearchTests {
     @DisplayName("Delete not existing User, 404 Not found check")
     void searchForNotExistingUser() {
 
-        Response userSearchResult = userCont
-                .searchUserByUsername(";elfjafj;ojdf;ojeosfjosfosjdfsjfojdi");
-        asserts.notFoundAssertion(userSearchResult);
+        userCont
+                .searchUserByUsernameAssertion(";elfjafj;ojdf;ojeosfjosfosjdfsjfojdi")
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.NOT_FOUND);
 
     }
 

@@ -2,12 +2,12 @@ package com.swagger;
 
 import com.epam.reportportal.junit5.ReportPortalExtension;
 import com.swagger.api.asserts.Asserts;
+import com.swagger.api.common.ResponseExpectMessages;
 import com.swagger.api.controller.userControllers.UserController;
 import com.swagger.api.data.UserDataGen;
 import com.swagger.petstore.models.User;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -41,9 +41,10 @@ public class UsersWithListCreationTests {
         List<User> users = userData.generateUsersArrayObj(5);
         List<String> userNames = userData.generateUserNamesArrayObj(users);
 
-        var createUserResponse = userCont
-                .createUsersWithListAuth(users);
-        asserts.okAssertion(createUserResponse);
+        userCont
+                .createUsersWithListAuth(users)
+                .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
+
 
 
         for (int y = 0; y < userNames.size(); y++) {
@@ -54,9 +55,9 @@ public class UsersWithListCreationTests {
             asserts.assertCreateUserBody(users.get(y), actualUser);
             asserts.okAssertion(userByNameResponse);
             /* Delete User after test passed */
-            Response userDeleted = userCont
-                    .deleteUserByUsername(userNames.get(y));
-            asserts.okAssertion(userDeleted);
+            userCont
+                    .deleteUserByUsername(userNames.get(y))
+                    .statusCodeIsEqualTo(ResponseExpectMessages.StatusCode.OK);
         }
     }
 }
